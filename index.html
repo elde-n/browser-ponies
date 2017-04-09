@@ -6,73 +6,31 @@
 <meta name="description" content="Browser Ponies lets you place ponies on websites"/>
 <title>Browser Ponies</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="gui.css"/>
-<link rel="stylesheet" type="text/css" href="https://panzi.github.io/SocialSharePrivacy/stylesheets/jquery.socialshareprivacy.min.css"/>
-<!--[if IE]>
-<script type="text/javascript" src="https://stringencoders.googlecode.com/svn-history/r230/trunk/javascript/base64.js"></script>
-<script type="text/javascript">
-if (!window.btoa) window.btoa = base64.encode;
-if (!window.atob) window.atob = base64.decodeo;
-</script>
-<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/gui.css"/>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript">jQuery.noConflict();</script>
-<script type="text/javascript" src="jquery.cookies.js"></script>
-<script type="text/javascript" src="https://panzi.github.io/SocialSharePrivacy/javascripts/jquery.socialshareprivacy.min.js"></script>
-<script type="text/javascript" src="ponycfg.js" id="browser-ponies-config"></script>
-<script type="text/javascript" src="browserponies.js" id="browser-ponies-script"></script>
-<script type="text/javascript" src="gui-common.js"></script>
-<script type="text/javascript" src="gui.js"></script>
-<script type="text/javascript">
-// <![CDATA[
-var disqus_shortname = 'browserponies';
-jQuery(document).ready(function ($) {
-	$('#share').socialSharePrivacy({
-		order: ['twitter','tumblr','disqus','reddit','stumbleupon','linkedin','mail','gplus','pinterest','facebook'],
-		layout: 'box',
-		services: {
-			tumblr:  {type: 'video'},
-			twitter: {tweet_text: $.fn.socialSharePrivacy.getDescription},
-			flattr:  {status: false},
-			disqus: {
-				shortname: disqus_shortname,
-				onclick: function () {
-					$('#comments-button').click();
-				}
-			}
-		},
-		image: absUrl('ponies/rainbow%20dash/hoverupdown_rainbow_right.gif'),
-		embed: function () { return iframeEmbedCode({
-				baseurl: absUrl(''),
-				autostart: true,
-				spawn: BrowserPoniesConfig.spawn
-			});
-		},
-		path_prefix: "https://panzi.github.io/SocialSharePrivacy/"
-	});
-	$('#comments-button').click(function () {
-		$.getScript('https://' + disqus_shortname + '.disqus.com/embed.js');
-		$(this).remove();
-	});
-});
-// ]]>
-</script>
+<script type="text/javascript" src="js/plugins/jquery.cookies.js"></script>
+<script type="text/javascript" src="js/ponycfg.js" id="browser-ponies-config"></script>
+<script type="text/javascript" src="js/browserponies.js" id="browser-ponies-script"></script>
+<script type="text/javascript" src="js/gui-common.js"></script>
+<script type="text/javascript" src="js/gui.js"></script>
+<script type="text/javascript" src="js/plugins/bootstrap.js"></script>
 </head>
 <body onload="init();updateConfig();initScriptUrl();">
-<div id="main">
+<div id="main" class="container">
 
 <h1>Browser Ponies</h1>
+<center><h4><a href="http://panzi.github.com/Browser-Ponies/">Original Page</a></h4></center>
 <p id="controls">
-<a class="button" href="javascript:BrowserPonies.start();void(0)" title="Start">&#x25B6;</a>
-<a class="button" href="javascript:BrowserPonies.stop();void(0)" title="Stop">&#x25A0;</a>
-<a class="button" href="javascript:BrowserPonies.pause();void(0)" title="Pause">&#x25AE;&#x25AE;</a>
-<a class="button" href="javascript:BrowserPonies.resume();void(0)" title="Resume">&#x25AE;&#x25B6;</a>
-<a class="button" href="javascript:BrowserPonies.togglePoniesToBackground();void(0)"
-	title="Toggle ponies in background">&#x2195;</a>
-<a class="button" href="javascript:BrowserPonies.unspawnAll();BrowserPonies.stop();void(0)" title="Remove all Ponies">&times;</a>
+<a class="button glyphicon glyphicon-play" href="javascript:BrowserPonies.start();void(0)" title="Start"></a>
+<a class="button glyphicon glyphicon-stop" href="javascript:BrowserPonies.stop();void(0)" title="Stop"></a>
+<a class="button glyphicon glyphicon-pause" href="javascript:BrowserPonies.pause();void(0)" title="Pause"></a>
+<a class="button glyphicon glyphicon-arrow-right" href="javascript:BrowserPonies.resume();void(0)" title="Resume"></a>
+<a class="button glyphicon glyphicon-resize-vertical" href="javascript:BrowserPonies.togglePoniesToBackground();void(0)"
+	title="Toggle ponies in background"></a>
+<a class="button glyphicon glyphicon-remove" href="javascript:BrowserPonies.unspawnAll();BrowserPonies.stop();void(0)" title="Remove all Ponies"></a>
 </p>
-
-<div id="share"></div>
 
 <h2>What is this?</h2>
 <p>
@@ -147,7 +105,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
 </tbody>
 </table>
 
-<table>
+<table class="config_ponies">
 <tbody>
 <tr>
 <td><label for="iframe-width">Width:</label></td>
@@ -214,7 +172,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
 </tbody>
 </table>
 
-<table>
+<table class="config_ponies">
 <tbody>
 <tr>
 <td><label for="speed">Speed Multiplier:</label></td>
@@ -488,14 +446,6 @@ If you want to you can also copy the <tt>browserponies.js</tt> file and serve it
 This server here does not have the best uptime so you might want to do that. 
 </p>
 
-<h2>Best Pony</h2>
-
-<p>
-What is your favourite pony? Resort the list to tell me!
-</p>
-
-<iframe frameborder="0" height="1035" src="http://crowdranking.com/widgets/t89g0--best-pony.iframe?lang=en&amp;v=1" style="border-style: none; width: 400px; height: 1035px; display: block; margin: auto;" width="400"></iframe>
-
 <h2>Download</h2>
 <p>
 You can download the source without images/sounds here:<br/>
@@ -518,7 +468,7 @@ art credits. The only changes I made are fixes to the file names, because the we
 
 <p>
 A git repository can be found here:<br/>
-<a href="https://github.com/panzi/Browser-Ponies">https://github.com/panzi/Browser-Ponies</a>
+<a href="https://github.com/jackieapkon/Browser-Ponies">https://github.com/jackieapkon/Browser-Ponies</a>
 </p>
 
 <h2>License</h2>
@@ -565,6 +515,8 @@ SOFTWARE.
 
 </div>
 
-<div id="footer">&copy; 2011-2013 Mathias Panzenb&ouml;ck</div>
+<div id="footer">&copy; 2011-2013 Mathias Panzenb&ouml;ck | Page Edited by Jackie Apkon</div>
+
+<script type="text/javascript" src="js/ponychromemania.js"></script>
 </body>
 </html>

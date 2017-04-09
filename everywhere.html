@@ -3,7 +3,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf8"/>
 <title>Browser Ponies Everywhere</title>
-<link rel="stylesheet" type="text/css" href="gui.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/gui.css"/>
 <style type="text/css">
 html, body {
 	overflow: hidden;
@@ -37,6 +38,7 @@ iframe {
 	overflow: auto;
 	padding: 10px;
 }
+#buttons a{padding: 7px !important;}
 #buttons {
 	position: fixed;
 	right: 20px;
@@ -60,26 +62,27 @@ form {
 #url {
 	width: 400px;
 }
+.clickgo{margin-left: 10px;}
 </style>
-<script type="text/javascript" src="basecfg.js" id="browser-ponies-config"></script>
-<script type="text/javascript" src="browserponies.js" id="browser-ponies-script"></script>
-<script type="text/javascript" src="gui-common.js"></script>
-<script type="text/javascript" src="everywhere.js"></script>
+<script type="text/javascript" src="js/basecfg.js" id="browser-ponies-config"></script>
+<script type="text/javascript" src="js/browserponies.js" id="browser-ponies-script"></script>
+<script type="text/javascript" src="js/gui-common.js"></script>
+<script type="text/javascript" src="js/everywhere.js"></script>
 </head>
 <body onload="loadPage();init();loadConfig();">
 <iframe id="iframe" border="0"></iframe>
 
 <div id="buttons">
-<a class="button" href="javascript:startPonies();void(0)" title="Start" id="start" style="display:none;">&#x25B6;</a>
-<a class="button" href="javascript:stopPonies();void(0)" title="Stop" id="stop">&#x25A0;</a>
-<a class="button" href="javascript:toggleSettings();void(0)" title="Settings">&#x2699;</a>
+<a class="button glyphicon glyphicon-play" href="javascript:startPonies();void(0)" title="Start" id="start" style="display:none;"></a>
+<a class="button glyphicon glyphicon-stop" href="javascript:stopPonies();void(0)" title="Stop" id="stop"></a>
+<a class="button glyphicon glyphicon-cog" href="javascript:toggleSettings();void(0)" title="Settings"></a>
 </div>
 
-<div id="main" style="display:none;">
+<div id="main" class="container" style="display:none;">
 <div id="main-inner">
 <form onsubmit="location.hash = $('url').value; hideSettings(); return false;">
 <input type="text" id="url" name="url" onclick="this.select();" placeholder="http://example.com/"/>
-<button>Go</button>
+<button class="clickgo">Go</button>
 </form>
 
 <h2>Change settings and choose your ponies</h2>
@@ -113,7 +116,7 @@ form {
 </tbody>
 </table>
 
-<table>
+<table class="config_ponies">
 <tbody>
 <tr>
 <td><label for="speed">Speed Multiplier:</label></td>
@@ -221,7 +224,7 @@ See <a href="ponies.html">this</a> for more information and a way to embed ponie
 to your website permanently.
 </p>
 
-<div id="footer">&copy; 2011 Mathias Panzenb&ouml;ck</div>
+<div id="footer">&copy; 2011 Mathias Panzenb&ouml;ck | Page Edited by Jackie Apkon</div>
 </div>
 </div>
 </body>
