@@ -143,7 +143,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Berry Punch</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Verry%20Punch/stand_oppp_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Berry%20Punch/stand_oppp_right.gif</ponyimage>
 <datapony>Berry Punch</datapony>
 <ponyid>pony_berry_punch</ponyid>
 
@@ -170,7 +170,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, fillies, earth ponies</ponytags>
 <ponyname>Blinkie Pie</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Blinkie%20Pie/idle_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Limestone%20Pie/limestone_idle_right.gif</ponyimage>
 <datapony>Blinkie Pie</datapony>
 <ponyid>pony_blinkie_pie</ponyid>
 
@@ -197,7 +197,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Bon-Bon</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/bon-bon/bonbon-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Bon-Bon/bonbon-idle-right.gif</ponyimage>
 <datapony>Bon-Bon</datapony>
 <ponyid>pony_bon_bon</ponyid>
 
@@ -287,7 +287,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, alternate art, mares, earth ponies</ponytags>
 <ponyname>Cheerilee (80S)</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Cheerilee%20%2880S%29/stand_80s_cherilee_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Cheerilee%20%2880s%29/stand_80s_cherilee_right.gif</ponyimage>
 <datapony>Cheerilee (80S)</datapony>
 <ponyid>pony_cheerilee__80s_</ponyid>
 
@@ -341,7 +341,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, mares, unicorns</ponytags>
 <ponyname>Colgate</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Colgate/colgate_stand_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Minuette/colgate_stand_right.gif</ponyimage>
 <datapony>Colgate</datapony>
 <ponyid>pony_colgate</ponyid>
 
@@ -476,7 +476,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, earth ponies, mares</ponytags>
 <ponyname>Elsie</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Elsie/stand_right.png</ponyimage>
+<ponyimage>source-base(url)Ponies/Elsie/stand_right.gif</ponyimage>
 <datapony>Elsie</datapony>
 <ponyid>pony_elsie</ponyid>
 
@@ -521,7 +521,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>main ponies, mares, earth ponies</ponytags>
 <ponyname>Fili-Second</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Fili-Second/fili-second-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Fili-Second/fili-second-idle-right.gif</ponyimage>
 <datapony>Fili-Second</datapony>
 <ponyid>pony_fili_second</ponyid>
 
@@ -701,7 +701,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, non-ponies, colts</ponytags>
 <ponyname>Hum Drum</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Hum%20Drum/humdrum-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Hum%20Drum/humdrum-idle-right.gif</ponyimage>
 <datapony>Hum Drum</datapony>
 <ponyid>pony_hum_drum</ponyid>
 
@@ -719,7 +719,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>fillies, earth ponies, supporting ponies</ponytags>
 <ponyname>Inky Pie</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Inky%20Pie/idle_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Limestone%20Pie/idle_right.gif</ponyimage>
 <datapony>Inky Pie</datapony>
 <ponyid>pony_inky_pie</ponyid>
 
@@ -845,7 +845,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>main ponies, mares, alicorns</ponytags>
 <ponyname>Masked Matterhorn</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Masked%20Matterhorn/masked-matterhorn-idle1-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Masked%20Matterhorn/masked-matterhorn-idle1-right.gif</ponyimage>
 <datapony>Masked Matterhorn</datapony>
 <ponyid>pony_masked_matterhorn</ponyid>
 
@@ -863,7 +863,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>main ponies, mares, earth ponies</ponytags>
 <ponyname>Mistress Marevelous</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Mistress%20Marevelous/mistress-marevelous-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Mistress%20Marevelous/mistress-marevelous-idle-right.gif</ponyimage>
 <datapony>Mistress Marevelous</datapony>
 <ponyid>pony_mistress_marevelous</ponyid>
 
@@ -935,7 +935,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>mares, supporting ponies, earth ponies</ponytags>
 <ponyname>Ms Peachbottom</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Ms%20Peachbottom/ms-peachbottom-stand-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Ms%20Peachbottom/Ms-peachbottom-stand-right.gif</ponyimage>
 <datapony>Ms Peachbottom</datapony>
 <ponyid>pony_ms_peachbottom</ponyid>
 
@@ -962,7 +962,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Nurse Redheart</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Nurse%20Redheart/idle_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Nurse%20Redheart/redheart-idle-right.gif</ponyimage>
 <datapony>Nurse Redheart</datapony>
 <ponyid>pony_nurse_redheart</ponyid>
 
@@ -1043,7 +1043,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Photo Finish</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Photo%20Finish/idle_right.png</ponyimage>
+<ponyimage>source-base(url)Ponies/Photo%20Finish/idle_right.gif</ponyimage>
 <datapony>Photo Finish</datapony>
 <ponyid>pony_photo_finish</ponyid>
 
@@ -1214,7 +1214,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>main ponies, mares, unicorns</ponytags>
 <ponyname>Radiance</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Radiance/radiance-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Radiance/radiance-idle-right.gif</ponyimage>
 <datapony>Radiance</datapony>
 <ponyid>pony_radiance</ponyid>
 
@@ -1358,7 +1358,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>main ponies, mares, pegasi</ponytags>
 <ponyname>Saddle Rager</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Saddle%20Rager/saddle-rager-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Saddle%20Rager/saddle-rager-idle-right.gif</ponyimage>
 <datapony>Saddle Rager</datapony>
 <ponyid>pony_saddle_rager</ponyid>
 
@@ -1610,7 +1610,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Sue Pie</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Sue%20Pie/idle_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Cloudy%20Quartz/idle_right.gif</ponyimage>
 <datapony>Sue Pie</datapony>
 <ponyid>pony_sue_pie</ponyid>
 
@@ -1790,7 +1790,7 @@ The artwork used is from the <b>Ponychan fork</b> of <b>Desktop Ponies</b>, <b>M
 <ponytags>main ponies, mares, pegasi</ponytags>
 <ponyname>Zapp</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Zapp/zapp-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Zapp/zapp-idle-right.gif</ponyimage>
 <datapony>Zapp</datapony>
 <ponyid>pony_zapp</ponyid>
 

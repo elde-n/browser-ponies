@@ -264,12 +264,12 @@ AJ Truck,\"Applejack\",0.05,300,{\"Twilight Sparkle\"},One,{\"truck_twilight\"},
 ========================
 
 
-{"ini": "Name,\"Berry Punch\"\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nbehaviorgroup,1,Normal\nbehaviorgroup,2,Drunk\nBehavior,stand,0.1,15,10,0,stand_oppp_right.gif,stand_oppp_right.gif,MouseOver,,,,False,0,0,,True,,,\"52,50\",\"35,50\",False,1,Fixed\nBehavior,fly,0.15,10,5,3,trotcycle_oppp_right.gif,trotcycle_oppp_right.gif,Diagonal_Only,,,,False,0,0,,True,,,\"52,56\",\"35,56\",False,1,Fixed\nBehavior,walk,0.25,15,5,3,trotcycle_oppp_right.gif,trotcycle_oppp_right.gif,Horizontal_Only,,,,False,0,0,,True,,,\"52,56\",\"35,56\",False,1,Fixed\nBehavior,sitting,0.2,45,30,0,sit_oppp_right.gif,sit_oppp_right.gif,Sleep,,,,False,0,0,,True,,,\"42,30\",\"34,30\",False,1,Fixed\nBehavior,drink,0.05,4.6,4.6,0,berrypunch_drink_right.gif,berrypunch_drink_right.gif,None,,,,False,0,0,,True,,,\"56,58\",\"49,58\",False,1,Fixed\nBehavior,\"drink 2\",0.03,4.6,4.6,0,berrypunch_drink_right1.gif,berrypunch_drink_left1.gif,None,stand2,,\"drunk #1\",False,0,0,,True,,,\"56,58\",\"49,58\",False,1,Fixed\nBehavior,stand2,0.3,15,10,0,stand_berry_right.gif,stand_berry_right.gif,MouseOver,,,,False,0,0,,True,,,\"56,60\",\"43,60\",False,2,Fixed\nBehavior,fly2,0.15,10,5,2,trotcycle_berry_right.gif,trotcycle_berry_right.gif,Diagonal_Only,,,,False,0,0,,True,,,\"52,56\",\"35,56\",False,2,Fixed\nBehavior,walk2,0.25,15,5,2,trotcycle_berry_right.gif,trotcycle_berry_right.gif,Horizontal_Only,,,,False,0,0,,True,,,\"52,56\",\"35,56\",False,2,Fixed\nBehavior,sitting2,0.1,30,10,0,sit_berry_right.gif,sit_berry_right.gif,None,stand,,,False,0,0,,True,,,\"42,30\",\"34,30\",False,2,Fixed\nBehavior,sleep,0.1,45,15,0,sleep_berry_right.gif,sleep_berry_right.gif,Sleep,walk,,,False,0,0,,True,,,\"42,30\",\"34,30\",False,2,Fixed\nSpeak,\"Both #1\",\"May I have this dance,little one?\",,False,0\nSpeak,\"Both #2\",\"Where's my foal!?\",,False,0\nSpeak,\"Both #3\",\"It takes only one drink to get me drunk. The trouble is, I can't remember if it's the thirteenth or the fourteenth.\",,False,0\nSpeak,\"Sober #1\",\"That little filly with the bow can be scary sometimes.\",,False,1\nSpeak,\"Sober #2\",\"Me and my sis won the big race!\",,False,1\nSpeak,\"Sober #3\",\"My house was towed by a single stallion!?\",,False,1\nSpeak,\"Drunk #1\",*hic*,,False,2\nSpeak,\"Drunk #2\",\"This drink tastes like happy!\",,False,2\nSpeak,\"Drunk #3\",\"Why is the desktop spinning?\",,False,2\nSpeak,\"Drunk #4\",\"Wait,where am I?\",,False,2\nSpeak,\"Drunk #5\",\"Drunks and children always speak the truth\",,False,2\nSpeak,\"Drunk #6\",\"I DID IT... MYYYYYY WAAAAA*hic*AAAY\",,False,2\nSpeak,\"Drunk #7\",\"I may be drunk, Miss, but in the morning I will be sober and you will still be ugly.\",,False,2\nSpeak,\"Drunk #8\",\"A drunk mare's words are a sober mare's thoughts\",,False,2\n", "baseurl": "source-base/Ponies/Verry%20Punch/"}
+{"ini": "Name,\"Berry Punch\"\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nbehaviorgroup,1,Normal\nbehaviorgroup,2,Drunk\nBehavior,stand,0.1,15,10,0,stand_oppp_right.gif,stand_oppp_right.gif,MouseOver,,,,False,0,0,,True,,,\"52,50\",\"35,50\",False,1,Fixed\nBehavior,fly,0.15,10,5,3,trotcycle_oppp_right.gif,trotcycle_oppp_right.gif,Diagonal_Only,,,,False,0,0,,True,,,\"52,56\",\"35,56\",False,1,Fixed\nBehavior,walk,0.25,15,5,3,trotcycle_oppp_right.gif,trotcycle_oppp_right.gif,Horizontal_Only,,,,False,0,0,,True,,,\"52,56\",\"35,56\",False,1,Fixed\nBehavior,sitting,0.2,45,30,0,sit_oppp_right.gif,sit_oppp_right.gif,Sleep,,,,False,0,0,,True,,,\"42,30\",\"34,30\",False,1,Fixed\nBehavior,drink,0.05,4.6,4.6,0,berrypunch_drink_right.gif,berrypunch_drink_right.gif,None,,,,False,0,0,,True,,,\"56,58\",\"49,58\",False,1,Fixed\nBehavior,\"drink 2\",0.03,4.6,4.6,0,berrypunch_drink_right1.gif,berrypunch_drink_left1.gif,None,stand2,,\"drunk #1\",False,0,0,,True,,,\"56,58\",\"49,58\",False,1,Fixed\nBehavior,stand2,0.3,15,10,0,stand_berry_right.gif,stand_berry_right.gif,MouseOver,,,,False,0,0,,True,,,\"56,60\",\"43,60\",False,2,Fixed\nBehavior,fly2,0.15,10,5,2,trotcycle_berry_right.gif,trotcycle_berry_right.gif,Diagonal_Only,,,,False,0,0,,True,,,\"52,56\",\"35,56\",False,2,Fixed\nBehavior,walk2,0.25,15,5,2,trotcycle_berry_right.gif,trotcycle_berry_right.gif,Horizontal_Only,,,,False,0,0,,True,,,\"52,56\",\"35,56\",False,2,Fixed\nBehavior,sitting2,0.1,30,10,0,sit_berry_right.gif,sit_berry_right.gif,None,stand,,,False,0,0,,True,,,\"42,30\",\"34,30\",False,2,Fixed\nBehavior,sleep,0.1,45,15,0,sleep_berry_right.gif,sleep_berry_right.gif,Sleep,walk,,,False,0,0,,True,,,\"42,30\",\"34,30\",False,2,Fixed\nSpeak,\"Both #1\",\"May I have this dance,little one?\",,False,0\nSpeak,\"Both #2\",\"Where's my foal!?\",,False,0\nSpeak,\"Both #3\",\"It takes only one drink to get me drunk. The trouble is, I can't remember if it's the thirteenth or the fourteenth.\",,False,0\nSpeak,\"Sober #1\",\"That little filly with the bow can be scary sometimes.\",,False,1\nSpeak,\"Sober #2\",\"Me and my sis won the big race!\",,False,1\nSpeak,\"Sober #3\",\"My house was towed by a single stallion!?\",,False,1\nSpeak,\"Drunk #1\",*hic*,,False,2\nSpeak,\"Drunk #2\",\"This drink tastes like happy!\",,False,2\nSpeak,\"Drunk #3\",\"Why is the desktop spinning?\",,False,2\nSpeak,\"Drunk #4\",\"Wait,where am I?\",,False,2\nSpeak,\"Drunk #5\",\"Drunks and children always speak the truth\",,False,2\nSpeak,\"Drunk #6\",\"I DID IT... MYYYYYY WAAAAA*hic*AAAY\",,False,2\nSpeak,\"Drunk #7\",\"I may be drunk, Miss, but in the morning I will be sober and you will still be ugly.\",,False,2\nSpeak,\"Drunk #8\",\"A drunk mare's words are a sober mare's thoughts\",,False,2\n", "baseurl": "source-base/Ponies/Berry%20Punch/"}
 
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Berry Punch</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Verry%20Punch/stand_oppp_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Berry%20Punch/stand_oppp_right.gif</ponyimage>
 <datapony>Berry Punch</datapony>
 <ponyid>pony_berry_punch</ponyid>
 
@@ -303,12 +303,12 @@ AJ Truck,\"Applejack\",0.05,300,{\"Twilight Sparkle\"},One,{\"truck_twilight\"},
 ========================
 
 
-{"ini": "Name,\"Blinkie Pie\"\nCategories,\"supporting ponies\",fillies,\"earth ponies\"\nBehavior,idle,0.5,20,15,0,idle_right.gif,idle_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,trot,0.5,20,15,2,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,DJ1,0.15,10,6,0,dance_spin.gif,dance_spin.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\n", "baseurl": "source-base/Ponies/Blinkie%20Pie/"}
+{"ini": "Name,\"Blinkie Pie\"\nCategories,\"supporting ponies\",fillies,\"earth ponies\"\nBehavior,idle,0.5,20,15,0,idle_right.gif,idle_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,trot,0.5,20,15,2,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,DJ1,0.15,10,6,0,dance_spin.gif,dance_spin.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\n", "baseurl": "source-base/Ponies/Limestone%20Pie/"}
 
 <ponytags>supporting ponies, fillies, earth ponies</ponytags>
 <ponyname>Blinkie Pie</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Blinkie%20Pie/idle_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Limestone%20Pie/limestone_idle_right.gif</ponyimage>
 <datapony>Blinkie Pie</datapony>
 <ponyid>pony_blinkie_pie</ponyid>
 
@@ -342,12 +342,12 @@ AJ Truck,\"Applejack\",0.05,300,{\"Twilight Sparkle\"},One,{\"truck_twilight\"},
 ========================
 
 
-{"ini": "Name,Bon-Bon\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nBehavior,stand,0.3,15,5,0,bonbon-idle-right.gif,bonbon-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,walk,0.3,15,5,3,bonbon_walk_right.gif,bonbon_walk_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,follow,0.03,60,30,3,bonbon_walk_right.gif,bonbon_walk_right.gif,All,,\"unnamed #3\",,False,-39,0,Lyra,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,sleep,0.1,15,5,0,bonbon_sleep_right.gif,bonbon_sleep_right.gif,Sleep,,,,False,0,0,,True,,,\"42,27\",\"42,27\",False,0,Fixed\nBehavior,lyrabon,0.25,3,2.5,3,bonbon_walk_right.gif,bonbon_walk_right.gif,Diagonal_horizontal,bench-duo,,,True,0,4,Lyra,False,stand,walk,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,bench-duo,0.25,32,25,0,benchbonbon.gif,benchbonbon.gif,None,bench-end,,,True,0,0,,True,,,\"64,52\",\"64,52\",False,0,Fixed\nBehavior,bench-end,0.3,15,5,3,bonbon_walk_right.gif,bonbon_walk_right.gif,Diagonal_horizontal,,,,True,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nSpeak,\"Unnamed #1\",\"Is Fluttershy still here? We heard Fluttershy was here!\",,False,0\nSpeak,\"Unnamed #2\",\"I didn't put those in my bag.\",,False,0\nSpeak,\"Unnamed #3\",\"Oh, Lyra~\",,False,0\nSpeak,\"Unnamed #4\",\"Go ahead, try one of your jokes out on me! I laugh at everything.\",,False,0\n", "baseurl": "source-base/Ponies/bon-bon/"}
+{"ini": "Name,Bon-Bon\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nBehavior,stand,0.3,15,5,0,bonbon-idle-right.gif,bonbon-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,walk,0.3,15,5,3,bonbon_walk_right.gif,bonbon_walk_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,follow,0.03,60,30,3,bonbon_walk_right.gif,bonbon_walk_right.gif,All,,\"unnamed #3\",,False,-39,0,Lyra,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,sleep,0.1,15,5,0,bonbon_sleep_right.gif,bonbon_sleep_right.gif,Sleep,,,,False,0,0,,True,,,\"42,27\",\"42,27\",False,0,Fixed\nBehavior,lyrabon,0.25,3,2.5,3,bonbon_walk_right.gif,bonbon_walk_right.gif,Diagonal_horizontal,bench-duo,,,True,0,4,Lyra,False,stand,walk,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,bench-duo,0.25,32,25,0,benchbonbon.gif,benchbonbon.gif,None,bench-end,,,True,0,0,,True,,,\"64,52\",\"64,52\",False,0,Fixed\nBehavior,bench-end,0.3,15,5,3,bonbon_walk_right.gif,bonbon_walk_right.gif,Diagonal_horizontal,,,,True,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nSpeak,\"Unnamed #1\",\"Is Fluttershy still here? We heard Fluttershy was here!\",,False,0\nSpeak,\"Unnamed #2\",\"I didn't put those in my bag.\",,False,0\nSpeak,\"Unnamed #3\",\"Oh, Lyra~\",,False,0\nSpeak,\"Unnamed #4\",\"Go ahead, try one of your jokes out on me! I laugh at everything.\",,False,0\n", "baseurl": "source-base/Ponies/Bon-Bon/"}
 
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Bon-Bon</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/bon-bon/bonbon-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Bon-Bon/bonbon-idle-right.gif</ponyimage>
 <datapony>Bon-Bon</datapony>
 <ponyid>pony_bon_bon</ponyid>
 
@@ -459,12 +459,12 @@ banner,\"Carrot Top\",0.25,300,{\"Twilight Sparkle\"},One,{\"banner start\"},120
 ========================
 
 
-{"ini": "Name,\"Cheerilee (80S)\"\nCategories,\"supporting ponies\",\"alternate art\",mares,\"earth ponies\"\nBehavior,stand,0.1,15,10,0,stand_80s_cherilee_right.gif,stand_80s_cherilee_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,fly,0.15,10,5,3,trotcycle_80s_cherilee_right.gif,trotcycle_80s_cherilee_right.gif,Diagonal_Only,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.25,15,5,3,trotcycle_80s_cherilee_right.gif,trotcycle_80s_cherilee_right.gif,Horizontal_Only,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Unnamed #1\",\"That's like, totally tubular!\",,False,0\nSpeak,\"Unnamed #2\",Radical!,,False,0\n", "baseurl": "source-base/Ponies/Cheerilee%20%2880S%29/"}
+{"ini": "Name,\"Cheerilee (80S)\"\nCategories,\"supporting ponies\",\"alternate art\",mares,\"earth ponies\"\nBehavior,stand,0.1,15,10,0,stand_80s_cherilee_right.gif,stand_80s_cherilee_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,fly,0.15,10,5,3,trotcycle_80s_cherilee_right.gif,trotcycle_80s_cherilee_right.gif,Diagonal_Only,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.25,15,5,3,trotcycle_80s_cherilee_right.gif,trotcycle_80s_cherilee_right.gif,Horizontal_Only,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Unnamed #1\",\"That's like, totally tubular!\",,False,0\nSpeak,\"Unnamed #2\",Radical!,,False,0\n", "baseurl": "source-base/Ponies/Cheerilee%20%2880s%29/"}
 
 <ponytags>supporting ponies, alternate art, mares, earth ponies</ponytags>
 <ponyname>Cheerilee (80S)</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Cheerilee%20%2880S%29/stand_80s_cherilee_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Cheerilee%20%2880s%29/stand_80s_cherilee_right.gif</ponyimage>
 <datapony>Cheerilee (80S)</datapony>
 <ponyid>pony_cheerilee__80s_</ponyid>
 
@@ -550,12 +550,12 @@ banner,\"Carrot Top\",0.25,300,{\"Twilight Sparkle\"},One,{\"banner start\"},120
 ========================
 
 
-{"ini": "Name,Colgate\nCategories,\"supporting ponies\",mares,unicorns\nBehavior,stand,0.4,15,3,0,colgate_stand_right.gif,colgate_stand_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.4,15,3,2,colgate_walk_right.gif,colgate_walk_right.gif,Diagonal_Only,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,brushie,0.2,15,5,0,colgate_stretch_right.gif,colgate_stretch_right.gif,None,,brushie_speak,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,sitting,0.2,45,30,0,colgate_sit_right.gif,colgate_sit_right.gif,Sleep,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nEffect,brush,brushie,colgate_brush_right.gif,colgate_brush_right.gif,0,0,Right,Bottom_Right,Left,Bottom_Left,True,False\nSpeak,brushie_speak,\"Brushie brushie brushie brushie!\",,False,0\n", "baseurl": "source-base/Ponies/Colgate/"}
+{"ini": "Name,Colgate\nCategories,\"supporting ponies\",mares,unicorns\nBehavior,stand,0.4,15,3,0,colgate_stand_right.gif,colgate_stand_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.4,15,3,2,colgate_walk_right.gif,colgate_walk_right.gif,Diagonal_Only,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,brushie,0.2,15,5,0,colgate_stretch_right.gif,colgate_stretch_right.gif,None,,brushie_speak,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,sitting,0.2,45,30,0,colgate_sit_right.gif,colgate_sit_right.gif,Sleep,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nEffect,brush,brushie,colgate_brush_right.gif,colgate_brush_right.gif,0,0,Right,Bottom_Right,Left,Bottom_Left,True,False\nSpeak,brushie_speak,\"Brushie brushie brushie brushie!\",,False,0\n", "baseurl": "source-base/Ponies/Minuette/"}
 
 <ponytags>supporting ponies, mares, unicorns</ponytags>
 <ponyname>Colgate</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Colgate/colgate_stand_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Minuette/colgate_stand_right.gif</ponyimage>
 <datapony>Colgate</datapony>
 <ponyid>pony_colgate</ponyid>
 
@@ -746,12 +746,12 @@ Discorded,\"Discord\",0.05,160,{\"Twilight Sparkle\"},Any,{\"Discorded\"},120\n
 ========================
 
 
-{"ini": "Name,Elsie\nCategories,\"supporting ponies\",\"earth ponies\",mares\nBehavior,stand,0.45,15,10,0,stand_right.png,stand_right.png,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.45,15,10,2,walk_normal_right.gif,walk_normal_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk_camera,0.15,15,10,2,walk_camera_right.gif,walk_camera_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,photo_shoot_start,0,30,30,5,speed_walk_right.gif,speed_walk_right.gif,All,get_in_position_fluttershy,,,True,0,0,\"Photo Finish\",True,,,\"0,0\",\"0,0\",False,0\nBehavior,get_in_position_fluttershy,0,30,30,5,speed_walk_camera_right.gif,speed_walk_camera_right.gif,All,deploy_camera,,,True,-104,0,Fluttershy,True,,,\"0,0\",\"0,0\",False,0\nBehavior,deploy_camera,0,1.7,1.7,0,camera_place.gif,camera_place.gif,None,move_away,,,True,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,move_away,0,15,15,3,walk_normal_right.gif,walk_normal_right.gif,All,follow_photo,,,True,-149,-149,\"Photo Finish\",True,,,\"0,0\",\"0,0\",False,0\nBehavior,follow_photo,1,15,15,3,walk_normal_right.gif,walk_normal_right.gif,All,,,,True,0,0,\"Photo Finish\",True,,,\"0,0\",\"0,0\",False,0\n", "baseurl": "source-base/Ponies/Elsie/"}
+{"ini": "Name,Elsie\nCategories,\"supporting ponies\",\"earth ponies\",mares\nBehavior,stand,0.45,15,10,0,stand_right.gif,stand_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.45,15,10,2,walk_normal_right.gif,walk_normal_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk_camera,0.15,15,10,2,walk_camera_right.gif,walk_camera_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,photo_shoot_start,0,30,30,5,speed_walk_right.gif,speed_walk_right.gif,All,get_in_position_fluttershy,,,True,0,0,\"Photo Finish\",True,,,\"0,0\",\"0,0\",False,0\nBehavior,get_in_position_fluttershy,0,30,30,5,speed_walk_camera_right.gif,speed_walk_camera_right.gif,All,deploy_camera,,,True,-104,0,Fluttershy,True,,,\"0,0\",\"0,0\",False,0\nBehavior,deploy_camera,0,1.7,1.7,0,camera_place.gif,camera_place.gif,None,move_away,,,True,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,move_away,0,15,15,3,walk_normal_right.gif,walk_normal_right.gif,All,follow_photo,,,True,-149,-149,\"Photo Finish\",True,,,\"0,0\",\"0,0\",False,0\nBehavior,follow_photo,1,15,15,3,walk_normal_right.gif,walk_normal_right.gif,All,,,,True,0,0,\"Photo Finish\",True,,,\"0,0\",\"0,0\",False,0\n", "baseurl": "source-base/Ponies/Elsie/"}
 
 <ponytags>supporting ponies, earth ponies, mares</ponytags>
 <ponyname>Elsie</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Elsie/stand_right.png</ponyimage>
+<ponyimage>source-base(url)Ponies/Elsie/stand_right.gif</ponyimage>
 <datapony>Elsie</datapony>
 <ponyid>pony_elsie</ponyid>
 
@@ -1076,12 +1076,12 @@ fluttershy_photoshoot,\"Fluttershy\",0.5,100,{\"Elsie\",\"Photo Finish\"},Any,{\
 ========================
 
 
-{"ini": "Name,\"Inky Pie\"\nCategories,fillies,\"earth ponies\",\"supporting ponies\"\nBehavior,idle,0.5,20,15,0,idle_right.gif,idle_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,trot,0.5,20,15,2,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"32,36\",\"31,36\",False,0,Fixed\nBehavior,DJ1,0.25,10,8,0,boogy_inky4_right.gif,boogy_inky4_right.gif,None,,,,True,0,0,,True,,,\"36,46\",\"35,46\",False,0,Fixed\n", "baseurl": "source-base/Ponies/Inky%20Pie/"}
+{"ini": "Name,\"Inky Pie\"\nCategories,fillies,\"earth ponies\",\"supporting ponies\"\nBehavior,idle,0.5,20,15,0,idle_right.gif,idle_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,trot,0.5,20,15,2,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"32,36\",\"31,36\",False,0,Fixed\nBehavior,DJ1,0.25,10,8,0,boogy_inky4_right.gif,boogy_inky4_right.gif,None,,,,True,0,0,,True,,,\"36,46\",\"35,46\",False,0,Fixed\n", "baseurl": "source-base/Ponies/Limestone%20Pie/"}
 
 <ponytags>fillies, earth ponies, supporting ponies</ponytags>
 <ponyname>Inky Pie</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Inky%20Pie/idle_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Limestone%20Pie/idle_right.gif</ponyimage>
 <datapony>Inky Pie</datapony>
 <ponyid>pony_inky_pie</ponyid>
 
@@ -1363,12 +1363,12 @@ cuddle_manticore,\"Manticore\",0.1,250,{\"Fluttershy\"},One,{\"cuddle_manticore_
 ========================
 
 
-{"ini": "Name,\"Ms Peachbottom\"\nCategories,Mares,\"supporting ponies\",\"Earth Ponies\"\nBehavior,idle,0.5,20,15,0,ms-peachbottom-stand-right.gif,ms-peachbottom-stand-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,trot,0.5,20,15,2,ms-peachbottom-trot-right.gif,ms-peachbottom-trot-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Unnamed #1\",\"Darn-tootin, ain't that the cat's meow!'\",,False,0\nSpeak,\"Unnamed #2\",\"Hot diggety dog!\",,False,0\nSpeak,\"Unnamed #3\",\"Mind if I take a quick run outside first?\",,False,0", "baseurl": "source-base/Ponies/Ms%20Peachbottom/"}
+{"ini": "Name,\"Ms Peachbottom\"\nCategories,Mares,\"supporting ponies\",\"Earth Ponies\"\nBehavior,idle,0.5,20,15,0,Ms-peachbottom-stand-right.gif,Ms-peachbottom-stand-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,trot,0.5,20,15,2,Ms-peachbottom-trot-right.gif,Ms-peachbottom-trot-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Unnamed #1\",\"Darn-tootin, ain't that the cat's meow!'\",,False,0\nSpeak,\"Unnamed #2\",\"Hot diggety dog!\",,False,0\nSpeak,\"Unnamed #3\",\"Mind if I take a quick run outside first?\",,False,0", "baseurl": "source-base/Ponies/Ms%20Peachbottom/"}
 
 <ponytags>mares, supporting ponies, earth ponies</ponytags>
 <ponyname>Ms Peachbottom</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Ms%20Peachbottom/ms-peachbottom-stand-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Ms%20Peachbottom/Ms-peachbottom-stand-right.gif</ponyimage>
 <datapony>Ms Peachbottom</datapony>
 <ponyid>pony_ms_peachbottom</ponyid>
 
@@ -1402,12 +1402,12 @@ cuddle_manticore,\"Manticore\",0.1,250,{\"Fluttershy\"},One,{\"cuddle_manticore_
 ========================
 
 
-{"ini": "Name,\"Nurse Redheart\"\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nBehavior,idle,0.5,20,15,0,idle_right.gif,idle_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,trot,0.5,20,15,3,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,100ccs,\"\u201cI need 100 cc\u2019s of friendship, stat!\u201d\",,False,0\n", "baseurl": "source-base/Ponies/Nurse%20Redheart/"}
+{"ini": "Name,\"Nurse Redheart\"\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nBehavior,idle,0.5,20,15,0,idle-right.gif,idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,trot,0.5,20,15,3,trot-right.gif,trot-right.gif,Diagonal-horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,100ccs,\"\u201cI need 100 cc\u2019s of friendship, stat!\u201d\",,False,0\n", "baseurl": "source-base/Ponies/Nurse%20Redheart/"}
 
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Nurse Redheart</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Nurse%20Redheart/idle_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Nurse%20Redheart/redheart-idle-right.gif</ponyimage>
 <datapony>Nurse Redheart</datapony>
 <ponyid>pony_nurse_redheart</ponyid>
 
@@ -1519,12 +1519,12 @@ cuddle_manticore,\"Manticore\",0.1,250,{\"Fluttershy\"},One,{\"cuddle_manticore_
 ========================
 
 
-{"ini": "Name,\"Photo Finish\"\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nBehavior,stand,0.15,20,15,0,idle_right.png,idle_right.png,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.15,15,10,3,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,photo_shoot_start,0,5,5,0,itistimetomakehemagics_sinc.gif,itistimetomakehemagics_sinc.gif,None,stalk_fluttershy,magics,,True,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,stalk_fluttershy,0,60,60,20,trot_right.gif,trot_right.gif,All,take_photos,,magics,True,-220,20,Fluttershy,True,,,\"0,0\",\"0,0\",False,0\nBehavior,take_photos,0,15,15,0,take_photos.gif,take_photos.gif,None,run,,wego,True,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,arrived,0.01,5,5,0,idle_right.png,idle_right.png,None,,arrived,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,point/shoot,0.01,5,5,0,idle_right.png,idle_right.png,None,,point/shoot,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,run,0.15,15,10,5,photorun_right.gif,photorun_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,magics,\"...It is time to make DE MAGICKS!!\",{\"time to make the magics.mp3\",\"time to make the magics.ogg\"},False,0\nSpeak,wego,\"I go...\",{\"i go.mp3\",\"i go.ogg\"},False,0\nSpeak,YesNo,\"Yes!  No, no, no!  Yes!!!\",,True,0\nSpeak,arrived,\"I, Photo Finish... have arrived!\",{\"i photo finish have arrived.mp3\",\"i photo finish have arrived.ogg\"},False,0\nSpeak,point/shoot,\"I only need to point and shoot, and I capture... DE MAGICKS!\",{\"i only need to point and shoot and i capture da migics.mp3\",\"i only need to point and shoot and i capture da migics.ogg\"},False,0\nSpeak,\"Soundboard #1\",Flootershay!,{fluttershy.mp3,fluttershy.ogg},False,0\nSpeak,\"Soundboard #3\",\"Oh, wunderbar!\",{\"oh, wunderbar.mp3\",\"oh, wunderbar.ogg\"},False,0\n", "baseurl": "source-base/Ponies/Photo%20Finish/"}
+{"ini": "Name,\"Photo Finish\"\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nBehavior,stand,0.15,20,15,0,idle_right.gif,idle_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.15,15,10,3,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,photo_shoot_start,0,5,5,0,itistimetomakehemagics_sinc.gif,itistimetomakehemagics_sinc.gif,None,stalk_fluttershy,magics,,True,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,stalk_fluttershy,0,60,60,20,trot_right.gif,trot_right.gif,All,take_photos,,magics,True,-220,20,Fluttershy,True,,,\"0,0\",\"0,0\",False,0\nBehavior,take_photos,0,15,15,0,take_photos.gif,take_photos.gif,None,run,,wego,True,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,arrived,0.01,5,5,0,idle_right.gif,idle_right.gif,None,,arrived,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,point/shoot,0.01,5,5,0,idle_right.gif,idle_right.gif,None,,point/shoot,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,run,0.15,15,10,5,photorun_right.gif,photorun_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,magics,\"...It is time to make DE MAGICKS!!\",{\"time to make the magics.mp3\",\"time to make the magics.ogg\"},False,0\nSpeak,wego,\"I go...\",{\"i go.mp3\",\"i go.ogg\"},False,0\nSpeak,YesNo,\"Yes!  No, no, no!  Yes!!!\",,True,0\nSpeak,arrived,\"I, Photo Finish... have arrived!\",{\"i photo finish have arrived.mp3\",\"i photo finish have arrived.ogg\"},False,0\nSpeak,point/shoot,\"I only need to point and shoot, and I capture... DE MAGICKS!\",{\"i only need to point and shoot and i capture da migics.mp3\",\"i only need to point and shoot and i capture da migics.ogg\"},False,0\nSpeak,\"Soundboard #1\",Flootershay!,{fluttershy.mp3,fluttershy.ogg},False,0\nSpeak,\"Soundboard #3\",\"Oh, wunderbar!\",{\"oh, wunderbar.mp3\",\"oh, wunderbar.ogg\"},False,0\n", "baseurl": "source-base/Ponies/Photo%20Finish/"}
 
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Photo Finish</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Photo%20Finish/idle_right.png</ponyimage>
+<ponyimage>source-base(url)Ponies/Photo%20Finish/idle_right.gif</ponyimage>
 <datapony>Photo Finish</datapony>
 <ponyid>pony_photo_finish</ponyid>
 
@@ -1617,12 +1617,12 @@ gummy_balloon_poke,\"Pokey Pierce\",0.15,300,{\"Gummy\"},One,{\"gummy_balloon_po
 ========================
 
 
-{"ini": "Name,Fili-Second\nCategories,\"main ponies\",mares,\"earth ponies\"\nBehavior,stand,0.5,15,10,0,fili-second-idle-right.gif,fili-second-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,walk,0.5,15,7,4,fili-second-right.gif,fili-second-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,gallop,0.1,3,0.8,18,fili-second-gallop-right.gif,fili-second-gallop-right.gif,Horizontal_Only,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nEffect,Speed1,gallop,fili-speed1-right.gif,fili-speed1-right.gif,0.35,0.04,Center,Center,Center,Center,False,True\nEffect,Speed2,gallop,fili-speed2-right.gif,fili-speed2-right.gif,0.35,0.04,Center,Center,Center,Center,False,True\nEffect,Speed3,gallop,fili-speed3-right.gif,fili-speed3-right.gif,0.35,0.04,Center,Center,Center,Center,False,True\nEffect,Speed4,gallop,fili-speed4-right.gif,fili-speed4-right.gif,0.35,0.04,Center,Center,Center,Center,False,True\nSpeak,\"Speech 1\",\"Wee! This is so much fun!\",,False,0\nSpeak,\"Speech 2\",\"Prehensile hair! Now that's something I want to try!\",,False,0\nSpeak,\"Speech 3\",Woohoo!,,False,0\nSpeak,\"Speech 4\",\"Tag you're it!\",,False,0\n", "baseurl": "source-base/Ponies/pp%20Fili-Second/"}
+{"ini": "Name,Fili-Second\nCategories,\"main ponies\",mares,\"earth ponies\"\nBehavior,stand,0.5,15,10,0,fili-second-idle-right.gif,fili-second-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,walk,0.5,15,7,4,fili-second-right.gif,fili-second-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,gallop,0.1,3,0.8,18,fili-second-gallop-right.gif,fili-second-gallop-right.gif,Horizontal_Only,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nEffect,Speed1,gallop,fili-speed1-right.gif,fili-speed1-right.gif,0.35,0.04,Center,Center,Center,Center,False,True\nEffect,Speed2,gallop,fili-speed2-right.gif,fili-speed2-right.gif,0.35,0.04,Center,Center,Center,Center,False,True\nEffect,Speed3,gallop,fili-speed3-right.gif,fili-speed3-right.gif,0.35,0.04,Center,Center,Center,Center,False,True\nEffect,Speed4,gallop,fili-speed4-right.gif,fili-speed4-right.gif,0.35,0.04,Center,Center,Center,Center,False,True\nSpeak,\"Speech 1\",\"Wee! This is so much fun!\",,False,0\nSpeak,\"Speech 2\",\"Prehensile hair! Now that's something I want to try!\",,False,0\nSpeak,\"Speech 3\",Woohoo!,,False,0\nSpeak,\"Speech 4\",\"Tag you're it!\",,False,0\n", "baseurl": "source-base/Ponies/PP%20Fili-Second/"}
 
 <ponytags>main ponies, mares, earth ponies</ponytags>
 <ponyname>Fili-Second</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Fili-Second/fili-second-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Fili-Second/fili-second-idle-right.gif</ponyimage>
 <datapony>Fili-Second</datapony>
 <ponyid>pony_fili_second</ponyid>
 
@@ -1630,12 +1630,12 @@ gummy_balloon_poke,\"Pokey Pierce\",0.15,300,{\"Gummy\"},One,{\"gummy_balloon_po
 ========================
 
 
-{"ini": "Name,\"Hum Drum\"\nCategories,\"supporting ponies\",non-ponies,colts\nBehavior,stand,0.5,15,10,0,humdrum-idle-right.gif,humdrum-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.5,15,7,2,humdrum-walk-right.gif,humdrum-walk-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Speech 1\",\"When my friends need me, I always come through!\",,False,0\nSpeak,\"Speech 2\",\"You can count on me.\",,False,0\nSpeak,\"Speech 3\",\"Holy new personas, ponies!\",,False,0\nSpeak,\"Speech 4\",\"Well, I didn't now those comics were literally enchanted.\",,False,0\nSpeak,\"Speech 5\",\"Let's save Maretropolis!\",,False,0\nSpeak,\"Speech 6\",\"Once again, the day is saved!\",,False,0\n", "baseurl": "source-base/Ponies/pp%20Hum%20Drum/"}
+{"ini": "Name,\"Hum Drum\"\nCategories,\"supporting ponies\",non-ponies,colts\nBehavior,stand,0.5,15,10,0,humdrum-idle-right.gif,humdrum-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.5,15,7,2,humdrum-walk-right.gif,humdrum-walk-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Speech 1\",\"When my friends need me, I always come through!\",,False,0\nSpeak,\"Speech 2\",\"You can count on me.\",,False,0\nSpeak,\"Speech 3\",\"Holy new personas, ponies!\",,False,0\nSpeak,\"Speech 4\",\"Well, I didn't now those comics were literally enchanted.\",,False,0\nSpeak,\"Speech 5\",\"Let's save Maretropolis!\",,False,0\nSpeak,\"Speech 6\",\"Once again, the day is saved!\",,False,0\n", "baseurl": "source-base/Ponies/PP%20Hum%20Drum/"}
 
 <ponytags>supporting ponies, non-ponies, colts</ponytags>
 <ponyname>Hum Drum</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Hum%20Drum/humdrum-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Hum%20Drum/humdrum-idle-right.gif</ponyimage>
 <datapony>Hum Drum</datapony>
 <ponyid>pony_hum_drum</ponyid>
 
@@ -1643,12 +1643,12 @@ gummy_balloon_poke,\"Pokey Pierce\",0.15,300,{\"Gummy\"},One,{\"gummy_balloon_po
 ========================
 
 
-{"ini": "Name,\"Masked Matterhorn\"\nCategories,\"main ponies\",mares,alicorns\nBehavior,stand,0.4,15,10,0,masked-matterhorn-idle1-right.gif,masked-matterhorn-idle1-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.5,12,5,3,masked-matterhorn-right.gif,masked-matterhorn-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,fly,0.3,12,5,4,masked-matterhorn-fly-right.gif,masked-matterhorn-fly-right.gif,All,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Speech 1\",\"I'm the Masked Matterhorn.\",,False,0\nSpeak,\"Speech 2\",\"Humdrum may only look like a comedic sidekick to you, but for us he's a great friend!\",,False,0\nSpeak,\"Speech 3\",\"Why do I feel this urge to make ice-based puns?\",,False,0\nSpeak,\"Speech 4\",\"I never thought comics could be so... enchanting.\",,False,0\nSpeak,\"Speech 5\",\"I've lost myself in books before, but never quite like this.\",,False,0\nSpeak,\"Speech 6\",\"Let it snow.\",,False,0\nSpeak,\"Speech 7\",\"Ice powers? Does this make me 20% cooler now?\",,False,0\n", "baseurl": "source-base/Ponies/pp%20Masked%20Matterhorn/"}
+{"ini": "Name,\"Masked Matterhorn\"\nCategories,\"main ponies\",mares,alicorns\nBehavior,stand,0.4,15,10,0,masked-matterhorn-idle1-right.gif,masked-matterhorn-idle1-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.5,12,5,3,masked-matterhorn-right.gif,masked-matterhorn-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,fly,0.3,12,5,4,masked-matterhorn-fly-right.gif,masked-matterhorn-fly-right.gif,All,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Speech 1\",\"I'm the Masked Matterhorn.\",,False,0\nSpeak,\"Speech 2\",\"Humdrum may only look like a comedic sidekick to you, but for us he's a great friend!\",,False,0\nSpeak,\"Speech 3\",\"Why do I feel this urge to make ice-based puns?\",,False,0\nSpeak,\"Speech 4\",\"I never thought comics could be so... enchanting.\",,False,0\nSpeak,\"Speech 5\",\"I've lost myself in books before, but never quite like this.\",,False,0\nSpeak,\"Speech 6\",\"Let it snow.\",,False,0\nSpeak,\"Speech 7\",\"Ice powers? Does this make me 20% cooler now?\",,False,0\n", "baseurl": "source-base/Ponies/PP%20Masked%20Matterhorn/"}
 
 <ponytags>main ponies, mares, alicorns</ponytags>
 <ponyname>Masked Matterhorn</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Masked%20Matterhorn/masked-matterhorn-idle1-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Masked%20Matterhorn/masked-matterhorn-idle1-right.gif</ponyimage>
 <datapony>Masked Matterhorn</datapony>
 <ponyid>pony_masked_matterhorn</ponyid>
 
@@ -1656,12 +1656,12 @@ gummy_balloon_poke,\"Pokey Pierce\",0.15,300,{\"Gummy\"},One,{\"gummy_balloon_po
 ========================
 
 
-{"ini": "Name,\"Mistress Marevelous\"\nCategories,\"main ponies\",mares,\"earth ponies\"\nBehavior,stand,0.5,15,10,0,mistress-marevelous-idle-right.gif,mistress-marevelous-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.5,15,7,3,mistress-marevelous-right.gif,mistress-marevelous-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Speech 1\",\"What are these called? Hoofarangs?\",,False,0\nSpeak,\"Speech 2\",\"A megic lasso, eh? I think I like that.\",,False,0\nSpeak,\"Speech 3\",\"Let me show y'all how it's done!\",,False,0\nSpeak,\"Speech 4\",Yee-haw!,,False,0\nSpeak,\"Speech 5\",\"Time to Power Pony up!\",,False,0", "baseurl": "source-base/Ponies/pp%20Mistress%20Marevelous/"}
+{"ini": "Name,\"Mistress Marevelous\"\nCategories,\"main ponies\",mares,\"earth ponies\"\nBehavior,stand,0.5,15,10,0,mistress-marevelous-idle-right.gif,mistress-marevelous-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.5,15,7,3,mistress-marevelous-right.gif,mistress-marevelous-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Speech 1\",\"What are these called? Hoofarangs?\",,False,0\nSpeak,\"Speech 2\",\"A megic lasso, eh? I think I like that.\",,False,0\nSpeak,\"Speech 3\",\"Let me show y'all how it's done!\",,False,0\nSpeak,\"Speech 4\",Yee-haw!,,False,0\nSpeak,\"Speech 5\",\"Time to Power Pony up!\",,False,0", "baseurl": "source-base/Ponies/PP%20Mistress%20Marevelous/"}
 
 <ponytags>main ponies, mares, earth ponies</ponytags>
 <ponyname>Mistress Marevelous</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Mistress%20Marevelous/mistress-marevelous-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Mistress%20Marevelous/mistress-marevelous-idle-right.gif</ponyimage>
 <datapony>Mistress Marevelous</datapony>
 <ponyid>pony_mistress_marevelous</ponyid>
 
@@ -1669,12 +1669,12 @@ gummy_balloon_poke,\"Pokey Pierce\",0.15,300,{\"Gummy\"},One,{\"gummy_balloon_po
 ========================
 
 
-{"ini": "Name,Radiance\nCategories,\"main ponies\",mares,unicorns\nBehavior,stand,0.5,15,10,0,radiance-idle-right.gif,radiance-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.5,15,7,3,radiance-right.gif,radiance-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Speech 1\",\"Making the world a prettier place, one villain at a time.\",,False,0\nSpeak,\"Speech 2\",\"Take that you ruffian!\",,False,0\nSpeak,\"Speech 3\",\"There's nothing wrong with being a stylish superhero.\",,False,0\nSpeak,\"Speech 4\",\"I'm not really a comic fan, but I appreciate the creativity going into them.\",,False,0", "baseurl": "source-base/Ponies/pp%20Radiance/"}
+{"ini": "Name,Radiance\nCategories,\"main ponies\",mares,unicorns\nBehavior,stand,0.5,15,10,0,radiance-idle-right.gif,radiance-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nBehavior,walk,0.5,15,7,3,radiance-right.gif,radiance-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0\nSpeak,\"Speech 1\",\"Making the world a prettier place, one villain at a time.\",,False,0\nSpeak,\"Speech 2\",\"Take that you ruffian!\",,False,0\nSpeak,\"Speech 3\",\"There's nothing wrong with being a stylish superhero.\",,False,0\nSpeak,\"Speech 4\",\"I'm not really a comic fan, but I appreciate the creativity going into them.\",,False,0", "baseurl": "source-base/Ponies/PP%20Radiance/"}
 
 <ponytags>main ponies, mares, unicorns</ponytags>
 <ponyname>Radiance</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Radiance/radiance-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Radiance/radiance-idle-right.gif</ponyimage>
 <datapony>Radiance</datapony>
 <ponyid>pony_radiance</ponyid>
 
@@ -1682,12 +1682,12 @@ gummy_balloon_poke,\"Pokey Pierce\",0.15,300,{\"Gummy\"},One,{\"gummy_balloon_po
 ========================
 
 
-{"ini": "Name,\"Saddle Rager\"\nCategories,\"main ponies\",mares,pegasi\nbehaviorgroup,1,Normal\nbehaviorgroup,2,Angry\nBehavior,stand,0.4,15,10,0,saddle-rager-idle-right.gif,saddle-rager-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,1,Fixed\nBehavior,walk,0.4,15,7,3,saddle-rager-right.gif,saddle-rager-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,1,Fixed\nBehavior,fly,0.15,10,5,2,saddle-rager-fly-right.gif,saddle-rager-fly-right.gif,Diagonal_Vertical,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,1,Fixed\nBehavior,transform,0.03,3,3,0,saddle-rager-idle-right.gif,saddle-rager-idle-right.gif,None,\"angry roar\",\"Angry 2\",,False,0,0,,True,,,\"0,0\",\"0,0\",False,1,Fixed\nBehavior,\"angry idle\",0.5,15,10,0,saddle-rager-mad-right.gif,saddle-rager-mad-right.gif,MouseOver,stand,,,True,0,0,,True,,,\"74,78\",\"84,78\",False,2,Fixed\nBehavior,\"angry roar\",0.5,2,2,0,saddle-rager-mad2-right.gif,saddle-rager-mad2-right.gif,None,\"angry smash\",\"Angry 3\",,True,0,0,,True,,,\"82,76\",\"90,76\",False,2,Fixed\nBehavior,\"angry smash\",0.5,5,4,0,saddle-rager-mad1-right.gif,saddle-rager-mad1-right.gif,None,\"angry idle\",\"Angry 1\",,True,0,0,,True,,,\"158,90\",\"126,90\",False,2,Fixed\nSpeak,\"Speech 1\",\"Crime-fighting? Oh my, that sounds dangerous.\",,False,1\nSpeak,\"Speech 2\",\"I'll just stay here and not get in the way, if you don't mind.\",,False,1\nSpeak,\"Speech 3\",\"Become a monster? Oh, gosh! That wouldn't... be very... polite.\",,False,1\nSpeak,\"Speech 4\",\"Sorry, I'm not feeling angry. A little concerned, maybe...\",,False,1\nSpeak,\"Speech 5\",\"Couldn't this comic just be about knitting?\",,False,1\nSpeak,\"Angry 1\",\"Why don't you pick on someone your OWN SIZE??\",,True,2\nSpeak,\"Angry 2\",\"You big MEANIE!!\",,True,1\nSpeak,\"Angry 3\",ROOAARRRR!!!,,True,2\n", "baseurl": "source-base/Ponies/pp%20Saddle%20Rager/"}
+{"ini": "Name,\"Saddle Rager\"\nCategories,\"main ponies\",mares,pegasi\nbehaviorgroup,1,Normal\nbehaviorgroup,2,Angry\nBehavior,stand,0.4,15,10,0,saddle-rager-idle-right.gif,saddle-rager-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,1,Fixed\nBehavior,walk,0.4,15,7,3,saddle-rager-right.gif,saddle-rager-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,1,Fixed\nBehavior,fly,0.15,10,5,2,saddle-rager-fly-right.gif,saddle-rager-fly-right.gif,Diagonal_Vertical,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,1,Fixed\nBehavior,transform,0.03,3,3,0,saddle-rager-idle-right.gif,saddle-rager-idle-right.gif,None,\"angry roar\",\"Angry 2\",,False,0,0,,True,,,\"0,0\",\"0,0\",False,1,Fixed\nBehavior,\"angry idle\",0.5,15,10,0,saddle-rager-mad-right.gif,saddle-rager-mad-right.gif,MouseOver,stand,,,True,0,0,,True,,,\"74,78\",\"84,78\",False,2,Fixed\nBehavior,\"angry roar\",0.5,2,2,0,saddle-rager-mad2-right.gif,saddle-rager-mad2-right.gif,None,\"angry smash\",\"Angry 3\",,True,0,0,,True,,,\"82,76\",\"90,76\",False,2,Fixed\nBehavior,\"angry smash\",0.5,5,4,0,saddle-rager-mad1-right.gif,saddle-rager-mad1-right.gif,None,\"angry idle\",\"Angry 1\",,True,0,0,,True,,,\"158,90\",\"126,90\",False,2,Fixed\nSpeak,\"Speech 1\",\"Crime-fighting? Oh my, that sounds dangerous.\",,False,1\nSpeak,\"Speech 2\",\"I'll just stay here and not get in the way, if you don't mind.\",,False,1\nSpeak,\"Speech 3\",\"Become a monster? Oh, gosh! That wouldn't... be very... polite.\",,False,1\nSpeak,\"Speech 4\",\"Sorry, I'm not feeling angry. A little concerned, maybe...\",,False,1\nSpeak,\"Speech 5\",\"Couldn't this comic just be about knitting?\",,False,1\nSpeak,\"Angry 1\",\"Why don't you pick on someone your OWN SIZE??\",,True,2\nSpeak,\"Angry 2\",\"You big MEANIE!!\",,True,1\nSpeak,\"Angry 3\",ROOAARRRR!!!,,True,2\n", "baseurl": "source-base/Ponies/PP%20Saddle%20Rager/"}
 
 <ponytags>main ponies, mares, pegasi</ponytags>
 <ponyname>Saddle Rager</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Saddle%20Rager/saddle-rager-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Saddle%20Rager/saddle-rager-idle-right.gif</ponyimage>
 <datapony>Saddle Rager</datapony>
 <ponyid>pony_saddle_rager</ponyid>
 
@@ -1695,12 +1695,12 @@ gummy_balloon_poke,\"Pokey Pierce\",0.15,300,{\"Gummy\"},One,{\"gummy_balloon_po
 ========================
 
 
-{"ini": "Name,Zapp\nCategories,\"main ponies\",mares,pegasi\nBehavior,stand,0.5,15,10,0,zapp-idle-right.gif,zapp-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,walk,0.5,15,7,3,zapp-right.gif,zapp-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,fly,0.2,5,2,5,zapp-fly-right.gif,zapp-fly-right.gif,Diagonal_Vertical,,,,False,0,0,,True,,,\"45,42\",\"39,42\",False,0,Fixed\nSpeak,\"Speech 1\",\"Prepare to get 'zapped'!\",,False,0\nSpeak,\"Speech 2\",\"I knew I was awesome before, but now I'm like 'super-awesome'!\",,False,0\nSpeak,\"Speech 3\",\"This is undeniably, unquestionably awesome!\",,False,0\nSpeak,\"Speech 4\",\"I'm a one-mare force of nature!\",,False,0\n", "baseurl": "source-base/Ponies/pp%20Zapp/"}
+{"ini": "Name,Zapp\nCategories,\"main ponies\",mares,pegasi\nBehavior,stand,0.5,15,10,0,zapp-idle-right.gif,zapp-idle-right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,walk,0.5,15,7,3,zapp-right.gif,zapp-right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,fly,0.2,5,2,5,zapp-fly-right.gif,zapp-fly-right.gif,Diagonal_Vertical,,,,False,0,0,,True,,,\"45,42\",\"39,42\",False,0,Fixed\nSpeak,\"Speech 1\",\"Prepare to get 'zapped'!\",,False,0\nSpeak,\"Speech 2\",\"I knew I was awesome before, but now I'm like 'super-awesome'!\",,False,0\nSpeak,\"Speech 3\",\"This is undeniably, unquestionably awesome!\",,False,0\nSpeak,\"Speech 4\",\"I'm a one-mare force of nature!\",,False,0\n", "baseurl": "source-base/Ponies/PP%20Zapp/"}
 
 <ponytags>main ponies, mares, pegasi</ponytags>
 <ponyname>Zapp</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/pp%20Zapp/zapp-idle-right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/PP%20Zapp/zapp-idle-right.gif</ponyimage>
 <datapony>Zapp</datapony>
 <ponyid>pony_zapp</ponyid>
 
@@ -2421,12 +2421,12 @@ Wonderbolts_flight,\"Spitfire\",0.01,200,{\"Soarin\",\"Surprise\",\"Fleetfoot\"}
 ========================
 
 
-{"ini": "Name,\"Sue Pie\"\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nBehavior,idle,0.5,20,15,0,idle_right.gif,idle_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,trot,0.5,20,15,2,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,DJ1,0.25,10,8,0,sue6_right.gif,sue6_right.gif,None,,,,True,0,0,,True,,,\"47,60\",\"38,60\",False,0,Fixed\nSpeak,\"full name\",\"Pinkamina Diane Pie!\",,False,0\n", "baseurl": "source-base/Ponies/Sue%20Pie/"}
+{"ini": "Name,\"Sue Pie\"\nCategories,\"supporting ponies\",mares,\"earth ponies\"\nBehavior,idle,0.5,20,15,0,idle_right.gif,idle_right.gif,MouseOver,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,trot,0.5,20,15,2,trot_right.gif,trot_right.gif,Diagonal_horizontal,,,,False,0,0,,True,,,\"0,0\",\"0,0\",False,0,Fixed\nBehavior,DJ1,0.25,10,8,0,sue6_right.gif,sue6_right.gif,None,,,,True,0,0,,True,,,\"47,60\",\"38,60\",False,0,Fixed\nSpeak,\"full name\",\"Pinkamina Diane Pie!\",,False,0\n", "baseurl": "source-base/Ponies/Cloudy%20Quartz/"}
 
 <ponytags>supporting ponies, mares, earth ponies</ponytags>
 <ponyname>Sue Pie</ponyname>
 <baseurl></baseurl>
-<ponyimage>source-base(url)Ponies/Sue%20Pie/idle_right.gif</ponyimage>
+<ponyimage>source-base(url)Ponies/Cloudy%20Quartz/idle_right.gif</ponyimage>
 <datapony>Sue Pie</datapony>
 <ponyid>pony_sue_pie</ponyid>
 
