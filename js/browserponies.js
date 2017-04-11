@@ -1189,7 +1189,7 @@ var BrowserPonies = (function () {
 						background:  '#9BD6F4',
 						MozBorderRadius: '5px',
 						borderRadius:    '5px'
-					}, id: 'pc_m_bar'}}),
+					}, id: 'pc_m_bar'}),
 					label: tag('div', {style:{
 						position: 'absolute',
 						margin:          '0',
@@ -1199,7 +1199,7 @@ var BrowserPonies = (function () {
 						left:          '0px',
 						width:        '100%',
 						textAlign:  'center'
-					}, id: 'pc_m_label'}})
+					}, id: 'pc_m_label'})
 				};
 				progressbar.barcontainer = tag('div', {style:{
 					margin:            '0',
