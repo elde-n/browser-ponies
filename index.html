@@ -16,8 +16,9 @@
 <script type="text/javascript" src="js/gui-common.js"></script>
 <script type="text/javascript" src="js/gui.js"></script>
 <script type="text/javascript" src="js/plugins/bootstrap.js"></script>
+<script type="text/javascript" src="js/top.js"></script>
 </head>
-<body onload="init();updateConfig();initScriptUrl();">
+<body>
 <div id="main" class="container">
 
 <h1>Browser Ponies</h1>
@@ -84,7 +85,7 @@ support by the website in order to work.
 
 <p>
 <label for="embedcode">Or paste this into your webpage:</label>
-<div id="embedcodewrap"><textarea id="embedcode" onclick="this.select();"></textarea></div>
+<div id="embedcodewrap"><textarea id="embedcode"></textarea></div>
 </p>
 
 <p>
@@ -95,11 +96,11 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <table>
 <tbody>
 <tr>
-<td><input type="checkbox" id="paddock" onchange="updateConfig();" checked/></td>
+<td><input type="checkbox" id="paddock" checked/></td>
 <td><label for="paddock">Show Paddock</label></td>
 </tr>
 <tr>
-<td><input type="checkbox" id="grass" onchange="updateConfig();" checked/></td>
+<td><input type="checkbox" id="grass" checked/></td>
 <td><label for="grass">Show Grass</label></td>
 </tr>
 </tbody>
@@ -111,13 +112,12 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <td><label for="iframe-width">Width:</label></td>
 <td>
 <input type="text" class="number" id="iframe-width" value="640" data-value="640"
-	data-min="10" data-decimals="0" data-step="10" size="3"
-	onchange="numberFieldChanged.call(this,event);"/>
+	data-min="10" data-decimals="0" data-step="10" size="3" />
 </td>
 <td>px</td>
 <td>
-<button onclick="increaseNumberField.call($('iframe-width'));">+</button>
-<button onclick="decreaseNumberField.call($('iframe-width'));">&ndash;</button>
+<button id="btpx_1">+</button>
+<button id="btpx_2">&ndash;</button>
 </td>
 </tr>
 
@@ -125,20 +125,19 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <td><label for="iframe-height">Height:</label></td>
 <td>
 <input type="text" class="number" id="iframe-height" value="480" data-value="480"
-	data-min="10" data-decimals="0" data-step="10" size="3"
-	onchange="numberFieldChanged.call(this,event);"/>
+	data-min="10" data-decimals="0" data-step="10" size="3" />
 </td>
 <td>px</td>
 <td>
-<button onclick="increaseNumberField.call($('iframe-height'));">+</button>
-<button onclick="decreaseNumberField.call($('iframe-height'));">&ndash;</button>
+<button id="btpx_3">+</button>
+<button id="btpx_4">&ndash;</button>
 </td>
 </tr>
 </tbody>
 </table>
 
 <p>
-<div id="iframewrap"><textarea id="iframe" onclick="this.select();"></textarea></div>
+<div id="iframewrap"><textarea id="iframe"></textarea></div>
 </p>
 
 <h3>Change settings and choose your ponies</h3>
@@ -146,7 +145,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <table>
 <tbody>
 <tr>
-<td><input type="checkbox" id="enableaudio" onchange="updateConfig();"/></td>
+<td><input type="checkbox" id="enableaudio" /></td>
 <td><label for="enableaudio">Enable Audio</label>
 <span id="noaudio">(Your Browser does not support HTML5 Audio. Get a
 <a href="https://www.google.com/chrome/browser/" title="Goolge Chrome or&hellip;">better</a>
@@ -156,17 +155,17 @@ you can use this embed code to confine the ponies into an iframe:</label>
 </tr>
 
 <tr>
-<td><input type="checkbox" id="showfps" onchange="updateConfig();"/></td>
+<td><input type="checkbox" id="showfps" /></td>
 <td><label for="showfps">Show Frames per Second</label></td>
 </tr>
 
 <tr>
-<td><input type="checkbox" id="progressbar" onchange="updateConfig();" checked/></td>
+<td><input type="checkbox" id="progressbar" checked/></td>
 <td><label for="progressbar">Show Progress Bar</label></td>
 </tr>
 
 <tr>
-<td><input type="checkbox" id="dontspeak" onchange="updateDontSpeak(this.checked);"/></td>
+<td><input type="checkbox" id="dontspeak" /></td>
 <td><label for="dontspeak">Never Speak</label></td>
 </tr>
 </tbody>
@@ -178,13 +177,12 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <td><label for="speed">Speed Multiplier:</label></td>
 <td>
 <input type="text" class="number" id="speed" value="3.0" data-value="3.0"
-	data-min="0.1" data-decimals="1" data-step="0.1" size="3"
-	onchange="numberFieldChanged.call(this,event);"/>
+	data-min="0.1" data-decimals="1" data-step="0.1" size="3" />
 </td>
 <td></td>
 <td>
-<button onclick="increaseNumberField.call($('speed'));">+</button>
-<button onclick="decreaseNumberField.call($('speed'));">&ndash;</button>
+<button id="btpx_5">+</button>
+<button id="btpx_6">&ndash;</button>
 </td>
 </tr>
 
@@ -192,13 +190,12 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <td><label for="speak">Random Speak Probability:</label></td>
 <td>
 <input type="text" class="number" id="speak" value="15"
-	data-value="15" data-min="0" data-max="100" data-decimals="0" size="3"
-	onchange="numberFieldChanged.call(this,event);"/>
+	data-value="15" data-min="0" data-max="100" data-decimals="0" size="3" />
 </td>
 <td>%</td>
 <td>
-<button onclick="increaseNumberField.call($('speak'));">+</button>
-<button onclick="decreaseNumberField.call($('speak'));">&ndash;</button>
+<button id="btpx_7">+</button>
+<button id="btpx_8">&ndash;</button>
 </td>
 </tr>
 
@@ -206,13 +203,12 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <td><label for="volume">Volume:</label></td>
 <td>
 <input type="text" class="number" id="volume" value="100" data-value="100"
-	data-min="0" data-max="100" data-decimals="0" data-step="10" size="3"
-	onchange="numberFieldChanged.call(this,event);"/>
+	data-min="0" data-max="100" data-decimals="0" data-step="10" size="3" />
 </td>
 <td>%</td>
 <td>
-<button onclick="increaseNumberField.call($('volume'));">+</button>
-<button onclick="decreaseNumberField.call($('volume'));">&ndash;</button>
+<button id="btpx_9">+</button>
+<button id="btpx_10">&ndash;</button>
 </td>
 </tr>
 
@@ -220,13 +216,12 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <td><label for="fps">Frames per Second:</label></td>
 <td>
 <input type="text" class="number" id="fps" value="25"
-	data-value="25" data-min="1" data-decimals="0" size="3"
-	onchange="numberFieldChanged.call(this,event);"/>
+	data-value="25" data-min="1" data-decimals="0" size="3" />
 </td>
 <td></td>
 <td>
-<button onclick="increaseNumberField.call($('fps'));">+</button>
-<button onclick="decreaseNumberField.call($('fps'));">&ndash;</button>
+<button id="btpx_11">+</button>
+<button id="btpx_12">&ndash;</button>
 </td>
 </tr>
 
@@ -234,13 +229,12 @@ you can use this embed code to confine the ponies into an iframe:</label>
 <td><label for="fade">Fade Duration:</label></td>
 <td>
 <input type="text" class="number" id="fade" value="0.5"
-	data-value="0.5" data-min="0" data-decimals="1" data-step="0.1" size="3"
-	onchange="numberFieldChanged.call(this,event);"/>
+	data-value="0.5" data-min="0" data-decimals="1" data-step="0.1" size="3" />
 </td>
 <td>sec</td>
 <td>
-<button onclick="increaseNumberField.call($('fade'));">+</button>
-<button onclick="decreaseNumberField.call($('fade'));">&ndash;</button>
+<button id="btpx_13">+</button>
+<button id="btpx_14">&ndash;</button>
 </td>
 </tr>
 </tbody>
@@ -248,18 +242,18 @@ you can use this embed code to confine the ponies into an iframe:</label>
 
 <div id="filterwrapper">
 <label for="addcat">Filter Categories:</label>
-<button id="addcat" onclick="showCategorySelect();">+</button>
+<button id="addcat">+</button>
 <ul id="catselect" style="display:none;">
 <li id="allcatsadded">All Added</li>
 </ul>
 <ul id="catlist"></ul>
 <span id="nocatadded" style="display:none;">No Category Selected</span>
-<button onclick="removeAllCategories();" title="Remove All">&#x232B;</button>
+<button id="removeallcateg" title="Remove All">&#x232B;</button>
 </div>
 
 <ul id="ponylist"></ul>
 
-<p id="zero"><button onclick="setAllZero();">Set all Ponies to 0</button></p>
+<p id="zero"><button id="setallzero">Set all Ponies to 0</button></p>
 
 <h3>Bookmarks Menu</h3>
 
@@ -360,14 +354,9 @@ read files at all in JavaScript (probably in version 10 it will be able to do th
 </p>
 
 <h4>Your Ponies:</h4>
-<div class="dropzone"
-	ondrop="dropPony.call(this,event);"
-	ondragover="dragoverPony.call(this,event);"
-	ondragenter="dragoverPony.call(this,event);"
-	ondragleave="dragleaveDropzone.call(this,event);"
-	onmousemove="mousemoveDropzone.call(this,event);">
+<div id="dropzoneponies" class="dropzone">
 Click or drop Pony.ini files here.
-<input type="file" multiple="multiple" onchange="loadPonyFiles(this.files);"/>
+<input id="fileloadponies" type="file" multiple="multiple" />
 </div>
 
 <p>
@@ -396,14 +385,9 @@ are usually an order of magnitude bigger than that.
 <ul id="own-ponies"></ul>
 
 <h4>Your Interacions:</h4>
-<div class="dropzone"
-	ondrop="dropInteractions.call(this,event);"
-	ondragover="dragoverInteractions.call(this,event);"
-	ondragenter="dragoverInteractions.call(this,event);"
-	ondragleave="dragleaveDropzone.call(this,event);"
-	onmousemove="mousemoveDropzone.call(this,event);">
+<div class="dropzone">
 Click or drop Interactions.ini files here.
-<input type="file" multiple="multiple" onchange="loadInteractionFiles(this.files);"/>
+<input id="fileloadinteractions" type="file" multiple="multiple" />
 </div>
 
 <ul id="own-interactions"></ul>
@@ -414,7 +398,7 @@ Click or drop Interactions.ini files here.
 </p>
 
 <p>
-<button onclick="inisToJS();">Generate JavaScript Code</button>
+<button id="inistojs">Generate JavaScript Code</button>
 </p>
 
 <p>
@@ -520,6 +504,6 @@ SOFTWARE.
 
 <div id="footer">&copy; 2011-2013 Mathias Panzenb&ouml;ck | Page Edited by Jackie Apkon</div>
 
-<script type="text/javascript" src="js/ponychromemania.js"></script>
+<script type="text/javascript" src="js/bottom.js"></script>
 </body>
 </html>

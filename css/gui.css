@@ -5,11 +5,68 @@ font-family: equestria;
 src: url(../fonts/equestria.otf);
 }
 
+
+
+
+
+
+/* Scroll Up */
+
+#scrollup{
+transition: opacity 0.35s, z-index 0.35s;
+opacity: 0;
+z-index: -1;
+cursor: pointer;
+
+}
+#scrollup:before{
+transition: background-color 0.12s;
+border-radius: 50%;
+padding: 15px 12px;
+padding-right: 14px;
+}
+#scrollup:before, #scrollup{
+font-size: 25pt;
+position: fixed;
+bottom: 40px;
+right: 25px;
+}
+
+#scrollup[class*="affix"]:not(.affix-top){
+opacity: 1;
+z-index: 1 !important;
+}
+
+.modal-open #scrollup:before[class*="affix"]:not(.affix-top), .hidescroll #scrollup:before[class*="affix"]:not(.affix-top){
+//margin-right: 116px !important;
+}
+
+
+#scrollup:before{
+background-color: #4f98c9;
+}
+#scrollup:before, #scrollup{
+color: #FFF;
+}
+
+#scrollup:hover:before{
+background-color: #94C1DE !important;
+}
+#scrollup:active:before{
+background-color: #94C1DE !important;
+}
+
+
+
+
+/* Restante */
+
+
 body {
 	padding: 35px;
 	font-size: 14px;
 	line-height: 1.5;
-	background: #c9e6f4;
+	background: #e6e6e6;
 }
 body, option {
 	color: #294256;
@@ -25,7 +82,7 @@ h1 {
 	font-size: 35pt;
 }
 h1, h2, h3, h4, h5, h6 {
-	color: #458BC1;
+	color: #002d4d;
 	text-shadow: 1px 1px 1px white;
 	font-family: equestria;
 }
@@ -61,17 +118,17 @@ a:active, a:focus{text-decoration: none;}
 	cursor: hand;
 	cursor: pointer;
 
-	background: #89BADD;
+	background: #4f98c9;
 }
 a.button:visited {
 	color: white;
 }
 .button:focus, button:focus, select:focus,
 .button:hover, button:hover, select:hover {
-	background: #94C1DE;
+	background: #94C1DE; outline: none;
 }
 .button:active, button:active, select:active {
-	background: #89BADD;
+	background: #4f98c9;
 }
 .button.disabled, button:disabled, select:disabled {
 	cursor: default;
@@ -306,3 +363,15 @@ input[type="text"].dropzone {
 
 #ponylist input[type="text"]{margin-left: 6px;}
 #ponylist button{margin-left: 6px;margin-top: 15px;}
+
+
+
+
+
+
+
+#pc_m_bar, .pc_m_bar, .pc_m_barcontainer, #pc_m_barcontainer, .pc_m_container, #pc_m_container{padding: 17px !important;}
+#pc_m_bar, .pc_m_bar{margin-top: -17px !important; margin-left: -17px !important;}
+.pc_m_barcontainer, #pc_m_barcontainer{margin-top: -17px !important;}
+#pc_m_container, .pc_m_container{padding: 25px 10px!important;}
+.pc_m_label, #pc_m_label{margin-top: -1px !important;}
