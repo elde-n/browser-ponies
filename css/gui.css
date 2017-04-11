@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
 	font-weight: bold;
 	color: #245E8B;
+	transition: color 0.15s;
 }
 a:visited {
 	color: #458BC1;
@@ -119,6 +120,7 @@ a:active, a:focus{text-decoration: none;}
 	cursor: pointer;
 
 	background: #4f98c9;
+	transition: background 0.15s, background-color 0.15s;
 }
 a.button:visited {
 	color: white;
