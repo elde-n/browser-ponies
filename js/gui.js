@@ -596,6 +596,17 @@ function singleFileChanged (event) {
 }
 
 function loadPony (text,name) {
+    var pony_config_get = text.split('Interaction,')[0];
+    var pony_interactions_get = text.replace(pony_config_get, '');
+	var pony_name_get = text.split('\n')[0];
+	text = text.replace(pony_interactions_get, '');
+	var converinteractionscode = pony_interactions_get;
+    var replace_interactions_code = converinteractionscode.split(",")[1]+',"'+pony_name_get.replace('Name,', '')+'",';
+
+    var converinteractionscode = converinteractionscode
+    .replace("Interaction,", "")
+    .replace(converinteractionscode.split(",")[1]+',', replace_interactions_code);
+	if((pony_interactions_get != null) && (pony_interactions_get != undefined) && (pony_interactions_get != ''))loadInteraction(converinteractionscode, pony_name_get.replace('Name,', ''));
 	var pony;
 	try {
 		pony = BrowserPonies.convertPony(text);
