@@ -5,8 +5,8 @@ var BrowserPoniesBaseConfig = {};
 
 var oldConfig = {};
 var PonyScripts = {
-	'browser-ponies-script': absUrl('browserponies.js'),
-	'browser-ponies-config': absUrl('basecfg.js')
+	'browser-ponies-script': absUrl('js/browserponies.js'),
+	'browser-ponies-config': absUrl('js/basecfg.js')
 };
 
 function loadingJson(script) {
