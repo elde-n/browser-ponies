@@ -43,17 +43,17 @@ z-index: 1 !important;
 
 
 #scrollup:before{
-background-color: #4f98c9;
+background-color: #adb7d2;
 }
 #scrollup:before, #scrollup{
 color: #FFF;
 }
 
 #scrollup:hover:before{
-background-color: #94C1DE !important;
+background-color: #c6cde0 !important;
 }
 #scrollup:active:before{
-background-color: #94C1DE !important;
+background-color: #c6cde0 !important;
 }
 
 
@@ -69,7 +69,6 @@ body {
 	background: #e6e6e6;
 }
 body, option {
-	color: #294256;
 	font-size: 14px;
 }
 
@@ -82,7 +81,7 @@ h1 {
 	font-size: 35pt;
 }
 h1, h2, h3, h4, h5, h6 {
-	color: #002d4d;
+	color: #4F525A;
 	text-shadow: 1px 1px 1px white;
 	font-family: equestria;
 }
@@ -91,15 +90,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
 	font-weight: bold;
-	color: #245E8B;
+	color: #525A6E;
 	transition: color 0.15s;
 }
 a:visited {
-	color: #458BC1;
+	color: #898FA1;
 	text-decoration: none;
 }
 a:hover {
-	color: #72AEDB;
+	color: #97A0B8;
 	text-decoration: none;
 }
 a:active, a:focus{text-decoration: none;}
@@ -119,7 +118,7 @@ a:active, a:focus{text-decoration: none;}
 	cursor: hand;
 	cursor: pointer;
 
-	background: #4f98c9;
+	background: #adb7d2;
 	transition: background 0.15s, background-color 0.15s;
 }
 a.button:visited {
@@ -127,10 +126,10 @@ a.button:visited {
 }
 .button:focus, button:focus, select:focus,
 .button:hover, button:hover, select:hover {
-	background: #94C1DE; outline: none;
+	background: #c6cde0; outline: none;
 }
 .button:active, button:active, select:active {
-	background: #4f98c9;
+	background: #adb7d2;
 }
 .button.disabled, button:disabled, select:disabled {
 	cursor: default;
@@ -201,8 +200,8 @@ table, #embedcodewrap, #iframewrap {
 #main {
 	position: relative;
 	-moz-border-radius: 20px;
-	border: 1px solid #A3CCDE;
-	border: 1px solid rgba(163,204,222,0.8);
+	border: 1px solid #C6CDE0;
+	border: 1px solid rgba(198, 205, 224,0.8);
 	padding: 35px;
 }
 #main, textarea, input {
@@ -276,7 +275,7 @@ input.number {
 	-moz-border-radius: 10px;
 }
 #catselect li:hover {
-	background: #458BC1;
+	background: #898FA1;
 	color: white;
 }
 #catlist li {
@@ -340,7 +339,7 @@ p, #filterwrapper {
 	cursor: pointer;
 }
 .dragover {
-	background-color: #458BC1;
+	background-color: #898FA1;
 	color: white;
 }
 .file .dropzone {
