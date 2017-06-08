@@ -364,3 +364,26 @@ input[type="text"].dropzone {
 
 #ponylist input[type="text"]{margin-left: 6px;}
 #ponylist button{margin-left: 6px;margin-top: 15px;}
+
+
+
+
+
+
+@media (max-width: 768px) {
+	
+body{padding: 0px;}	
+
+#footer{
+margin-top: -25px;
+color: #000;
+opacity: 0.3;
+}
+
+#ponylist{
+width: auto;
+text-align: center;
+overflow-x: hidden;
+}
+	
+}
