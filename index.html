@@ -32,16 +32,13 @@
     <div id="main" class="container">
 
         <h1>Browser Ponies</h1>
-        <center>
-            <h4><a href="http://panzi.github.com/Browser-Ponies/">Original Page</a></h4>
-        </center>
         <p id="controls">
-            <a class="button glyphicon glyphicon-play" href="javascript:BrowserPonies.start();void(0)" title="Start"></a>
-            <a class="button glyphicon glyphicon-stop" href="javascript:BrowserPonies.stop();void(0)" title="Stop"></a>
-            <a class="button glyphicon glyphicon-pause" href="javascript:BrowserPonies.pause();void(0)" title="Pause"></a>
-            <a class="button glyphicon glyphicon-arrow-right" href="javascript:BrowserPonies.resume();void(0)" title="Resume"></a>
-            <a class="button glyphicon glyphicon-resize-vertical" href="javascript:BrowserPonies.togglePoniesToBackground();void(0)" title="Toggle ponies in background"></a>
-            <a class="button glyphicon glyphicon-remove" href="javascript:BrowserPonies.unspawnAll();BrowserPonies.stop();void(0)" title="Remove all Ponies"></a>
+            <a class="button glyphicon glyphicon-play" id="bt_start" title="Start"></a>
+            <a class="button glyphicon glyphicon-stop" id="bt_stop" title="Stop"></a>
+            <a class="button glyphicon glyphicon-pause" id="bt_pause" title="Pause"></a>
+            <a class="button glyphicon glyphicon-arrow-right" id="bt_resume" title="Resume"></a>
+            <a class="button glyphicon glyphicon-resize-vertical" id="bt_toggle" title="Toggle ponies in background"></a>
+            <a class="button glyphicon glyphicon-remove" id="bt_removeall" title="Remove all Ponies"></a>
         </p>
 
         <h2>What is this?</h2>
@@ -438,7 +435,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
 
     </div>
 
-    <div id="footer">&copy; 2011-2013 Mathias Panzenb&ouml;ck | Page Edited by Jackie Apkon</div>
+    <div id="footer">&copy; 2011-2013 <a href="https://github.com/panzi/Browser-Ponies" target="_blank">Mathias Panzenb&ouml;ck</a> | Page Edited by <a href="https://github.com/JasminDreasond/Browser-Ponies" target="_blank">Jasmin Dreasond</a></div>
 
     <!--<div id="pc_m_container" style="position: fixed; width: 450px; height: 30px; background: white; padding: 10px; margin: 0px; border-radius: 5px; color: rgb(41, 66, 86); font-weight: bold; font-size: 16px; opacity: 0.9; box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 12px; left: 458px; top: 311px;"><div id="pc_m_barcontainer" style="margin: 0px; padding: 0px; border-style: none; width: 100%; height: 100%; background: rgb(216, 216, 216); border-radius: 5px;"><div id="pc_m_bar" style="margin: 0px; padding: 0px; border-style: none; width: 450px; height: 100%; background: rgb(155, 214, 244); border-radius: 5px;"></div></div><div id="pc_m_label" style="position: absolute; margin: 0px; padding: 0px; border-style: none; top: 13px; left: 0px; width: 100%; text-align: center;">Loading Ponies… 100%</div></div> -->
 
