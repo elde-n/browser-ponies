@@ -37,7 +37,7 @@
 
 .modal-open #scrollup:before[class*="affix"]:not(.affix-top),
 .hidescroll #scrollup:before[class*="affix"]:not(.affix-top) {
-    //margin-right: 116px !important;
+    margin-right: 116px !important;
 }
 
 #scrollup:before {
@@ -79,7 +79,6 @@ input[type="checkbox"] {
 h1 {
     text-align: center;
     margin: 0;
-    font-family: equestria;
     font-size: 35pt;
 }
 
@@ -255,10 +254,15 @@ table,
 
 #main {
     position: relative;
-    -moz-border-radius: 20px;
     border: 1px solid #C6CDE0;
     border: 1px solid rgba(198, 205, 224, 0.8);
     padding: 35px;
+    margin-top: 35px;
+}
+
+#title {
+    font-family: equestria;
+    font-size: 16pt;
 }
 
 #main,

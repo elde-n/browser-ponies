@@ -28,271 +28,310 @@
     <script type="text/javascript" src="js/top.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                <a class="navbar-brand" href="#" id="title">Browser Ponies</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#n_main">Main</a></li>
+                        <li><a href="#n_bookmarklet">Bookmarklet</a></li>
+                        <li><a href="#n_config">Configs and Ponies</a></li>
+                        <li><a href="#n_advanced">Advanced</a></li>
+                        <li><a href="#n_download">Download and Licence</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div id="main" class="container">
 
-        <h1>Browser Ponies</h1>
-        <p id="controls">
-            <a class="button glyphicon glyphicon-play" id="bt_start" title="Start"></a>
-            <a class="button glyphicon glyphicon-stop" id="bt_stop" title="Stop"></a>
-            <a class="button glyphicon glyphicon-pause" id="bt_pause" title="Pause"></a>
-            <a class="button glyphicon glyphicon-arrow-right" id="bt_resume" title="Resume"></a>
-            <a class="button glyphicon glyphicon-resize-vertical" id="bt_toggle" title="Toggle ponies in background"></a>
-            <a class="button glyphicon glyphicon-remove" id="bt_removeall" title="Remove all Ponies"></a>
-        </p>
+        <div id="n_main">
 
-        <h2>What is this?</h2>
-        <p>
-            Browser Ponies lets you place <a href="http://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic">ponies</a> on websites (see the ponies here). You can create a bookmarklet which adds your favourite ponies to any website.
-        </p>
+            <p id="controls">
+                <a class="button glyphicon glyphicon-play" id="bt_start" data-toggle="tooltip" title="Start"></a>
+                <a class="button glyphicon glyphicon-stop" id="bt_stop" data-toggle="tooltip" title="Stop"></a>
+                <a class="button glyphicon glyphicon-pause" id="bt_pause" data-toggle="tooltip" title="Pause"></a>
+                <a class="button glyphicon glyphicon-arrow-right" id="bt_resume" data-toggle="tooltip" title="Resume"></a>
+                <a class="button glyphicon glyphicon-resize-vertical" id="bt_toggle" data-toggle="tooltip" title="Toggle ponies in background"></a>
+                <a class="button glyphicon glyphicon-remove" id="bt_removeall" data-toggle="tooltip" title="Remove all Ponies"></a>
+            </p>
 
-        <p>
-            This is a reimplementation of <a href="https://github.com/RoosterDragon/Desktop-Ponies">Desktop Ponies</a> in JavaScript. It doesn't behave exactly like the original but is close enough (no games and no cursor avoidance etc.).
-        </p>
+            <h2>What is this?</h2>
+            <p>
+                Browser Ponies lets you place <a href="http://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic">ponies</a> on websites (see the ponies here). You can create a bookmarklet which adds your favourite ponies to any website.
+            </p>
 
-        <p>
-            Browser Ponies work best with <a href="https://www.google.com/chrome/browser/">Google Chrome</a>, but they also work okay in <a href="https://www.mozilla.org/firefox/">Mozilla Firefox</a>.
-        </p>
+            <p>
+                This is a reimplementation of <a href="https://github.com/RoosterDragon/Desktop-Ponies">Desktop Ponies</a> in JavaScript. It doesn't behave exactly like the original but is close enough (no games and no cursor avoidance etc.).
+            </p>
 
-        <p>
-            The artwork used is from the <a href="http://www.ponychan.net/chan/collab/res/43172.html">Ponychan fork</a> of
-            <a href="http://sourceforge.net/projects/desktopponies/">Desktop Ponies</a>, <cite>My Little Pony: Friendship Is
+            <p>
+                Browser Ponies work best with <a href="https://www.google.com/chrome/browser/">Google Chrome</a>, but they also work okay in <a href="https://www.mozilla.org/firefox/">Mozilla Firefox</a>.
+            </p>
+
+            <p>
+                The artwork used is from the <a href="http://www.ponychan.net/chan/collab/res/43172.html">Ponychan fork</a> of
+                <a href="http://sourceforge.net/projects/desktopponies/">Desktop Ponies</a>, <cite>My Little Pony: Friendship Is
 Magic</cite> is &copy; by <a href="http://www.hubworld.com/my-little-pony/shows/friendship-is-magic">Hasbro</a> and
-            <a href="http://fyre-flye.deviantart.com/">Lauren Faust</a>.
-        </p>
+                <a href="http://fyre-flye.deviantart.com/">Lauren Faust</a>.
+            </p>
 
-        <h2>Short URL</h2>
+            <h2>Short URL</h2>
 
-        <p>
-            You can put ponies on a website by simply putting <tt>"http://tinyurl.com/ponyfy#"</tt> in front of the URL of the website. So e.g. <tt>"<a href="http://example.com/">example.com</a>"</tt> becomes
-            <tt>"<a href="http://tinyurl.com/ponyfy#example.com">http://tinyurl.com/ponyfy#example.com</a>"</tt>.
-        </p>
+            <p>
+                You can put ponies on a website by simply putting <tt>"http://tinyurl.com/ponyfy#"</tt> in front of the URL of the website. So e.g. <tt>"<a href="http://example.com/">example.com</a>"</tt> becomes
+                <tt>"<a href="http://tinyurl.com/ponyfy#example.com">http://tinyurl.com/ponyfy#example.com</a>"</tt>.
+            </p>
 
-        <p>
-            Note that not all websites allow embedding in an iframe (which is used here). E.g.
-            <a href="http://tinyurl.com/ponyfy#google.com">Google does not work</a>.
-        </p>
+            <p>
+                Note that not all websites allow embedding in an iframe (which is used here). E.g.
+                <a href="http://tinyurl.com/ponyfy#google.com">Google does not work</a>.
+            </p>
 
-        <h2>Make a Bookmarklet</h2>
-        <p>Choose your ponies belown and then drag this link into your Bookmark Toolbar:</p>
-        <p id="bookmarkletwrapper">
-            <a class="button" href="javascript:void(0)" id="bookmarklet">Ponies!</a>
-        </p>
-
-        <p>Click it whenever you feel a website needs more ponies.</p>
-
-        <p>
-            You can also bookmark the control links above in order to have control over ponies on any website. However, the <cite><a href="#toggleinbg">Toggle ponies in background</a></cite> function needs special support by the website in order to work.
-        </p>
-
-        <p>
-            <label for="embedcode">Or paste this into your webpage:</label>
-            <div id="embedcodewrap"><textarea id="embedcode"></textarea></div>
-        </p>
-
-        <p>
-            <label for="iframe">Or if you don't want to include my script directly in your webpage
-you can use this embed code to confine the ponies into an iframe:</label>
-        </p>
-
-        <table>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox" id="paddock" checked/></td>
-                    <td><label for="paddock">Show Paddock</label></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" id="grass" checked/></td>
-                    <td><label for="grass">Show Grass</label></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="config_ponies">
-            <tbody>
-                <tr>
-                    <td><label for="iframe-width">Width:</label></td>
-                    <td>
-                        <input type="text" class="number" id="iframe-width" value="640" data-value="640" data-min="10" data-decimals="0" data-step="10" size="3" />
-                    </td>
-                    <td>px</td>
-                    <td>
-                        <button id="btpx_1">+</button>
-                        <button id="btpx_2">&ndash;</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="iframe-height">Height:</label></td>
-                    <td>
-                        <input type="text" class="number" id="iframe-height" value="480" data-value="480" data-min="10" data-decimals="0" data-step="10" size="3" />
-                    </td>
-                    <td>px</td>
-                    <td>
-                        <button id="btpx_3">+</button>
-                        <button id="btpx_4">&ndash;</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p>
-            <div id="iframewrap"><textarea id="iframe"></textarea></div>
-        </p>
-
-        <h3>Change settings and choose your ponies</h3>
-
-        <table>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox" id="enableaudio" /></td>
-                    <td><label for="enableaudio">Enable Audio</label>
-                        <span id="noaudio">(Your Browser does not support HTML5 Audio. Get a
-<a href="https://www.google.com/chrome/browser/" title="Goolge Chrome or&hellip;">better</a>
-<a href="https://www.mozilla.org/firefox/" title="&hellip;Mozilla Firefox">browser</a>.)</span>
-                        <span id="hasaudio" style="display:none;">(Your browser supports HTML 5 Audio.)</span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox" id="showfps" /></td>
-                    <td><label for="showfps">Show Frames per Second</label></td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox" id="progressbar" checked/></td>
-                    <td><label for="progressbar">Show Progress Bar</label></td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox" id="dontspeak" /></td>
-                    <td><label for="dontspeak">Never Speak</label></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="config_ponies">
-            <tbody>
-                <tr>
-                    <td><label for="speed">Speed Multiplier:</label></td>
-                    <td>
-                        <input type="text" class="number" id="speed" value="3.0" data-value="3.0" data-min="0.1" data-decimals="1" data-step="0.1" size="3" />
-                    </td>
-                    <td></td>
-                    <td>
-                        <button id="btpx_5">+</button>
-                        <button id="btpx_6">&ndash;</button>
-                    </td>
-                </tr>
-
-                <tr title="Even if this is 0% ponies will speak if an animation requires it.">
-                    <td><label for="speak">Random Speak Probability:</label></td>
-                    <td>
-                        <input type="text" class="number" id="speak" value="15" data-value="15" data-min="0" data-max="100" data-decimals="0" size="3" />
-                    </td>
-                    <td>%</td>
-                    <td>
-                        <button id="btpx_7">+</button>
-                        <button id="btpx_8">&ndash;</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="volume">Volume:</label></td>
-                    <td>
-                        <input type="text" class="number" id="volume" value="100" data-value="100" data-min="0" data-max="100" data-decimals="0" data-step="10" size="3" />
-                    </td>
-                    <td>%</td>
-                    <td>
-                        <button id="btpx_9">+</button>
-                        <button id="btpx_10">&ndash;</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="fps">Frames per Second:</label></td>
-                    <td>
-                        <input type="text" class="number" id="fps" value="25" data-value="25" data-min="1" data-decimals="0" size="3" />
-                    </td>
-                    <td></td>
-                    <td>
-                        <button id="btpx_11">+</button>
-                        <button id="btpx_12">&ndash;</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="fade">Fade Duration:</label></td>
-                    <td>
-                        <input type="text" class="number" id="fade" value="0.5" data-value="0.5" data-min="0" data-decimals="1" data-step="0.1" size="3" />
-                    </td>
-                    <td>sec</td>
-                    <td>
-                        <button id="btpx_13">+</button>
-                        <button id="btpx_14">&ndash;</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div id="filterwrapper">
-            <label for="addcat">Filter Categories:</label>
-            <button id="addcat">+</button>
-            <ul id="catselect" style="display:none;">
-                <li id="allcatsadded">All Added</li>
-            </ul>
-            <ul id="catlist"></ul>
-            <span id="nocatadded" style="display:none;">No Category Selected</span>
-            <button id="removeallcateg" title="Remove All">&#x232B;</button>
         </div>
 
-        <ul id="ponylist"></ul>
+        <div id="n_bookmarklet">
 
-        <p id="zero"><button id="setallzero">Set all Ponies to 0</button></p>
+            <h2>Make a Bookmarklet</h2>
+            <p>Choose your ponies belown and then drag this link into your Bookmark Toolbar:</p>
+            <p id="bookmarkletwrapper">
+                <a class="button" href="javascript:void(0)" id="bookmarklet">Ponies!</a>
+            </p>
 
-        <h3>Bookmarks Menu</h3>
+            <p>Click it whenever you feel a website needs more ponies.</p>
 
-        <p>
-            If you'd like you can download a bookmarks file with links to add a certain pony and the controls from the top of this page. Just right click-save this link and import the resulting file in your browser (only tested in Chrome and Firefox):
-        </p>
+            <p>
+                You can also bookmark the control links above in order to have control over ponies on any website. However, the <cite><a href="#toggleinbg">Toggle ponies in background</a></cite> function needs special support by the website in order to
+                work.
+            </p>
 
-        <p id="bookmarkswrapper">
-            <a class="button" href="javascript:void(0)" id="bookmarks">Bookmarks Menu</a>
-        </p>
+            <p>
+                <label for="embedcode">Or paste this into your webpage:</label>
+                <div id="embedcodewrap"><textarea id="embedcode"></textarea></div>
+            </p>
 
-        <h3>Feedback</h3>
+            <p>
+                <label for="iframe">Or if you don't want to include my script directly in your webpage
+you can use this embed code to confine the ponies into an iframe:</label>
+            </p>
 
-        <p>
-            Send me feedback via <a href="mailto:jackieapkon@outlook.com.br">email</a>,
-            <a href="https://www.twitter.com/jackiedreasond" target="_blank">tweet me</a> or write a
-            <a href="https://github.com/jasmindreasond/Browser-Ponies/issues/new" target="_blank">bug report</a>.
-        </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="paddock" checked/></td>
+                        <td><label for="paddock">Show Paddock</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="grass" checked/></td>
+                        <td><label for="grass">Show Grass</label></td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <h2>Advanced User Stuff</h2>
+            <table class="config_ponies">
+                <tbody>
+                    <tr>
+                        <td><label for="iframe-width">Width:</label></td>
+                        <td>
+                            <input type="text" class="number" id="iframe-width" value="640" data-value="640" data-min="10" data-decimals="0" data-step="10" size="3" />
+                        </td>
+                        <td>px</td>
+                        <td>
+                            <button id="btpx_1">+</button>
+                            <button id="btpx_2">&ndash;</button>
+                        </td>
+                    </tr>
 
-        <h3>Browser Support</h3>
+                    <tr>
+                        <td><label for="iframe-height">Height:</label></td>
+                        <td>
+                            <input type="text" class="number" id="iframe-height" value="480" data-value="480" data-min="10" data-decimals="0" data-step="10" size="3" />
+                        </td>
+                        <td>px</td>
+                        <td>
+                            <button id="btpx_3">+</button>
+                            <button id="btpx_4">&ndash;</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <p>
-            Firefox has a bug concerning the animation speed of animated GIFs (I tried to work around this by shortening all effect durations when using Firefox). Also I found no way to control the animation playback of individual images in Firefox, which sometimes
-            causes animation errors (when a effect is shown twice both effect animations are synchronized).
-        </p>
+            <p>
+                <div id="iframewrap"><textarea id="iframe"></textarea></div>
+            </p>
 
-        <p>
-            In Internet Explorer I managed to control GIF animation playback using iframes, but you can't make them transparent and border less. In Chrome iframes do not suffer from this limitation.
-        </p>
+        </div>
 
-        <h3 id="toggleinbg">Toggle ponies in background</h3>
+        <div id="n_config">
 
-        <p>
-            In order to support the <cite>Toggle ponies in background</cite> function websites need to define a special function called <tt>toggleBrowserPoniesToBackground</tt>. This function changes the z-index of everything that should appear in front
-            of the ponies. The ponies have a z-index of <tt>9000000 + distance from top window border to bottom of the pony</tt>. The speak bubbles have a z-index of <tt>9009000</tt> (I assumed noone has a screen higher than 9000 pixels).
-        </p>
+            <h3>Change settings and choose your ponies</h3>
 
-        <p>
-            For instance, this webpage defines the <tt>toggleBrowserPoniesToBackground</tt> function like so:
-        </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="enableaudio" /></td>
+                        <td><label for="enableaudio">Enable Audio</label>
+                            <span id="noaudio">(Your Browser does not support HTML5 Audio. Get a
+<a href="https://www.google.com/chrome/browser/" data-toggle="tooltip" title="Goolge Chrome or&hellip;">better</a>
+<a href="https://www.mozilla.org/firefox/" data-toggle="tooltip" title="&hellip;Mozilla Firefox">browser</a>.)</span>
+                            <span id="hasaudio" style="display:none;">(Your browser supports HTML 5 Audio.)</span>
+                        </td>
+                    </tr>
 
-        <pre class="code">
+                    <tr>
+                        <td><input type="checkbox" id="showfps" /></td>
+                        <td><label for="showfps">Show Frames per Second</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" id="progressbar" checked/></td>
+                        <td><label for="progressbar">Show Progress Bar</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" id="dontspeak" /></td>
+                        <td><label for="dontspeak">Never Speak</label></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="config_ponies">
+                <tbody>
+                    <tr>
+                        <td><label for="speed">Speed Multiplier:</label></td>
+                        <td>
+                            <input type="text" class="number" id="speed" value="3.0" data-value="3.0" data-min="0.1" data-decimals="1" data-step="0.1" size="3" />
+                        </td>
+                        <td></td>
+                        <td>
+                            <button id="btpx_5">+</button>
+                            <button id="btpx_6">&ndash;</button>
+                        </td>
+                    </tr>
+
+                    <tr data-toggle="tooltip" title="Even if this is 0% ponies will speak if an animation requires it.">
+                        <td><label for="speak">Random Speak Probability:</label></td>
+                        <td>
+                            <input type="text" class="number" id="speak" value="15" data-value="15" data-min="0" data-max="100" data-decimals="0" size="3" />
+                        </td>
+                        <td>%</td>
+                        <td>
+                            <button id="btpx_7">+</button>
+                            <button id="btpx_8">&ndash;</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="volume">Volume:</label></td>
+                        <td>
+                            <input type="text" class="number" id="volume" value="100" data-value="100" data-min="0" data-max="100" data-decimals="0" data-step="10" size="3" />
+                        </td>
+                        <td>%</td>
+                        <td>
+                            <button id="btpx_9">+</button>
+                            <button id="btpx_10">&ndash;</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fps">Frames per Second:</label></td>
+                        <td>
+                            <input type="text" class="number" id="fps" value="25" data-value="25" data-min="1" data-decimals="0" size="3" />
+                        </td>
+                        <td></td>
+                        <td>
+                            <button id="btpx_11">+</button>
+                            <button id="btpx_12">&ndash;</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fade">Fade Duration:</label></td>
+                        <td>
+                            <input type="text" class="number" id="fade" value="0.5" data-value="0.5" data-min="0" data-decimals="1" data-step="0.1" size="3" />
+                        </td>
+                        <td>sec</td>
+                        <td>
+                            <button id="btpx_13">+</button>
+                            <button id="btpx_14">&ndash;</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="filterwrapper">
+                <label for="addcat">Filter Categories:</label>
+                <button id="addcat">+</button>
+                <ul id="catselect" style="display:none;">
+                    <li id="allcatsadded">All Added</li>
+                </ul>
+                <ul id="catlist"></ul>
+                <span id="nocatadded" style="display:none;">No Category Selected</span>
+                <button id="removeallcateg" data-toggle="tooltip" title="Remove All">&#x232B;</button>
+            </div>
+
+            <ul id="ponylist"></ul>
+
+            <p id="zero"><button id="setallzero">Set all Ponies to 0</button></p>
+
+        </div>
+
+        <div id="n_advanced">
+
+            <h3>Bookmarks Menu</h3>
+
+            <p>
+                If you'd like you can download a bookmarks file with links to add a certain pony and the controls from the top of this page. Just right click-save this link and import the resulting file in your browser (only tested in Chrome and Firefox):
+            </p>
+
+            <p id="bookmarkswrapper">
+                <a class="button" href="javascript:void(0)" id="bookmarks">Bookmarks Menu</a>
+            </p>
+
+            <h3>Feedback</h3>
+
+            <p>
+                Send me feedback via <a href="mailto:jackieapkon@outlook.com.br">email</a>,
+                <a href="https://www.twitter.com/jackiedreasond" target="_blank">tweet me</a> or write a
+                <a href="https://github.com/jasmindreasond/Browser-Ponies/issues/new" target="_blank">bug report</a>.
+            </p>
+
+            <h2>Advanced User Stuff</h2>
+
+            <h3>Browser Support</h3>
+
+            <p>
+                Firefox has a bug concerning the animation speed of animated GIFs (I tried to work around this by shortening all effect durations when using Firefox). Also I found no way to control the animation playback of individual images in Firefox, which sometimes
+                causes animation errors (when a effect is shown twice both effect animations are synchronized).
+            </p>
+
+            <p>
+                In Internet Explorer I managed to control GIF animation playback using iframes, but you can't make them transparent and border less. In Chrome iframes do not suffer from this limitation.
+            </p>
+
+            <h3 id="toggleinbg">Toggle ponies in background</h3>
+
+            <p>
+                In order to support the <cite>Toggle ponies in background</cite> function websites need to define a special function called <tt>toggleBrowserPoniesToBackground</tt>. This function changes the z-index of everything that should appear in
+                front of the ponies. The ponies have a z-index of <tt>9000000 + distance from top window border to bottom of the pony</tt>. The speak bubbles have a z-index of <tt>9009000</tt> (I assumed noone has a screen higher than 9000 pixels).
+            </p>
+
+            <p>
+                For instance, this webpage defines the <tt>toggleBrowserPoniesToBackground</tt> function like so:
+            </p>
+
+            <pre class="code">
 <span class="keyword">function</span> toggleBrowserPoniesToBackground () {
 	<span class="keyword">var</span> main = document.getElementById(<span class="literal">'main'</span>);
 	<span class="keyword">if</span> (main.style.zIndex === <span class="literal">''</span>) {
@@ -304,11 +343,11 @@ you can use this embed code to confine the ponies into an iframe:</label>
 }
 </pre>
 
-        <p>
-            In addition to that it defines these style rules:
-        </p>
+            <p>
+                In addition to that it defines these style rules:
+            </p>
 
-        <pre class="code">
+            <pre class="code">
 <span class="keyword">#main</span> {
 	position: <span class="keyword">relative</span>;
 	background: <span class="keyword">rgba</span>(<span class="literal">255</span>, <span class="literal">255</span>, <span class="literal">255</span>, <span class="literal">0.8</span>)</span>;
@@ -316,126 +355,133 @@ you can use this embed code to confine the ponies into an iframe:</label>
 }
 </pre>
 
-        <h3>Using your own ponies</h3>
+            <h3>Using your own ponies</h3>
 
-        <p>
-            If you want to use your own ponies you can convert the INI files to JavaScript using the tools below. Just load the INI files, fix the filenames/URLs if needed and generate the JavaScript. The resulting pony script will use the settings from above except
-            for which pony is loaded.
-        </p>
+            <p>
+                If you want to use your own ponies you can convert the INI files to JavaScript using the tools below. Just load the INI files, fix the filenames/URLs if needed and generate the JavaScript. The resulting pony script will use the settings from above except
+                for which pony is loaded.
+            </p>
 
-        <p>
-            <strong>Note:</strong> This currently only works with Firefox and Chrome. Opera does currently not support files being dropped (so click to use the file open dialog) and Internet Explorer currently cannot read files at all in JavaScript (probably
-            in version 10 it will be able to do that).
-        </p>
+            <p>
+                <strong>Note:</strong> This currently only works with Firefox and Chrome. Opera does currently not support files being dropped (so click to use the file open dialog) and Internet Explorer currently cannot read files at all in JavaScript
+                (probably in version 10 it will be able to do that).
+            </p>
 
-        <h4>Your Ponies:</h4>
-        <div id="dropzoneponies" class="dropzone">
-            Click or drop Pony.ini files here.
-            <input id="fileloadponies" type="file" multiple="multiple" />
-        </div>
+            <h4>Your Ponies:</h4>
+            <div id="dropzoneponies" class="dropzone">
+                Click or drop Pony.ini files here.
+                <input id="fileloadponies" type="file" multiple="multiple" />
+            </div>
 
-        <p>
-            As a next step you may need to adapt the URLs of the images and sounds to where they really are hosted. If they are hosted on some web server with the files of each pony in a seperate distinct directory you just need to change the base URL to the location
-            of said directory. Don't forget the / (slash) at the end of the base URL and please note that the web is case sensitive. This means the file names as they are on the server have to exactly the ones defined here.
-        </p>
+            <p>
+                As a next step you may need to adapt the URLs of the images and sounds to where they really are hosted. If they are hosted on some web server with the files of each pony in a seperate distinct directory you just need to change the base URL to the location
+                of said directory. Don't forget the / (slash) at the end of the base URL and please note that the web is case sensitive. This means the file names as they are on the server have to exactly the ones defined here.
+            </p>
 
-        <p>
-            If the files are all at some more or less random location, you need to adapt all the URLs individually. In this case just enter an absolute URL in the URL fields of each file. If the URL of an file is absolute the base URL will be ignored.
-        </p>
+            <p>
+                If the files are all at some more or less random location, you need to adapt all the URLs individually. In this case just enter an absolute URL in the URL fields of each file. If the URL of an file is absolute the base URL will be ignored.
+            </p>
 
-        <p>
-            As a third option you can also embed the files directly in the generated script. Note that this encodes the whole files into data URLs, which might cause the generated script to be a lot bigger than the sum size of all the files. Also Internet Explorer
-            does not support data URLs of the length of 2048 characters, and the pony sprites are usually an order of magnitude bigger than that.
-        </p>
+            <p>
+                As a third option you can also embed the files directly in the generated script. Note that this encodes the whole files into data URLs, which might cause the generated script to be a lot bigger than the sum size of all the files. Also Internet Explorer
+                does not support data URLs of the length of 2048 characters, and the pony sprites are usually an order of magnitude bigger than that.
+            </p>
 
-        <ul id="own-ponies"></ul>
+            <ul id="own-ponies"></ul>
 
-        <h4>Your Interacions:</h4>
-        <div id="dropzoneinteractions" class="dropzone">
-            Click or drop Interactions.ini files here.
-            <input id="fileloadinteractions" type="file" multiple="multiple" />
-        </div>
+            <h4>Your Interacions:</h4>
+            <div id="dropzoneinteractions" class="dropzone">
+                Click or drop Interactions.ini files here.
+                <input id="fileloadinteractions" type="file" multiple="multiple" />
+            </div>
 
-        <ul id="own-interactions"></ul>
+            <ul id="own-interactions"></ul>
 
-        <p>
-            <label title="Common prefix of image/audio file URLs of all ponies. (Not needed if you embed the files.)">Base URL:
+            <p>
+                <label data-toggle="tooltip" title="Common prefix of image/audio file URLs of all ponies. (Not needed if you embed the files.)">Base URL:
 <input type="text" id="own-baseurl"/></label>
-        </p>
+            </p>
 
-        <p>
-            <button id="inistojs">Generate JavaScript Code</button>
-        </p>
+            <p>
+                <button id="inistojs">Generate JavaScript Code</button>
+            </p>
 
-        <p>
-            <label for="javascript-output">your-ponies.js:</label>
-            <textarea class="code" id="javascript-output" rows="8"></textarea>
-        </p>
+            <p>
+                <label for="javascript-output">your-ponies.js:</label>
+                <textarea class="code" id="javascript-output" rows="8"></textarea>
+            </p>
 
-        <p>
-            Then put the contents of the text area above into a file called e.g. <tt>"your-ponies.js"</tt> and host it somewhere on the web. You can then embed your ponies on your web site by adding this code somewhere in the HTML code of your web site
-            (I recommend somewhere between
-            <tt>&lt;head&gt;</tt> and <tt>&lt;/head&gt;</tt>):
-        </p>
+            <p>
+                Then put the contents of the text area above into a file called e.g. <tt>"your-ponies.js"</tt> and host it somewhere on the web. You can then embed your ponies on your web site by adding this code somewhere in the HTML code of your web
+                site (I recommend somewhere between
+                <tt>&lt;head&gt;</tt> and <tt>&lt;/head&gt;</tt>):
+            </p>
 
-        <pre class="code">
+            <pre class="code">
 &lt;<span class="keyword">script</span> type=<span class="literal">"text/javascript"</span>
         src=<span class="literal">"<span id="javascript-url">browser-ponies.js</span>"</span>&gt;&lt;/<span class="keyword">script</span>&gt;
 &lt;<span class="keyword">script</span> type=<span class="literal">"text/javascript"</span>
         src=<span class="literal">"http://example.org/your-ponies.js"</span>&gt;&lt;/<span class="keyword">script</span>&gt;
 </pre>
 
-        <p>
-            Of course you need to replace <tt>http://example.org/your-ponies.js</tt> with the URL where you really host the file.
-        </p>
+            <p>
+                Of course you need to replace <tt>http://example.org/your-ponies.js</tt> with the URL where you really host the file.
+            </p>
 
-        <p>
-            If you want to you can also copy the <tt>browserponies.js</tt> file and serve it yourself. This server here does not have the best uptime so you might want to do that.
-        </p>
+            <p>
+                If you want to you can also copy the <tt>browserponies.js</tt> file and serve it yourself. This server here does not have the best uptime so you might want to do that.
+            </p>
 
-        <h2>Download</h2>
-        <p>
-            You can download the source without images/sounds here:<br/>
-            <a href="https://github.com/jasmindreasond/Browser-Ponies/archive/master.zip" download="browser-ponies-source.zip">browser-ponies-source.zip</a>
-        </p>
+        </div>
 
-        <p>
-            Or with images/sounds:<br/>
-            <a href="https://github.com/jasmindreasond/Browser-Ponies/archive/gh-pages.zip" download="browser-ponies-plus-resources.zip">browser-ponies-plus-resources.zip</a>
-        </p>
+        <div id="n_download">
 
-        <h2>Pony Chrome Mania - Files</h2>
-        <p>
-            Use this link in your extension <a href="https://chrome.google.com/webstore/detail/pony-chrome-mania/gmphnjfkihomohapbllmipeojnecjijc" target="_blank">Pony Chrome Mania</a>:<br/> Normal Files:<br/><br/> Pony List: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/desktopponies.txt</strong><br/>            Pony Code: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/ponies.txt</strong><br/> Interactions: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/interactions.txt</strong><br/><br/> Sandbox (Download):
-            <strong><a href="https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/SANDBOX.txt" download>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/SANDBOX.txt</a></strong><br/><br/> Auto Reverse Files:<br/><br/> Pony List: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/desktopponies.txt</strong><br/>            Pony Code: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/ponies.txt<br/></strong> Interactions: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/interactions.txt<br/><br/></strong>            Sandbox (Download): <strong><a href="https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt" download>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt</a></strong>
+            <h2>Download</h2>
+            <p>
+                You can download the source without images/sounds here:<br/>
+                <a href="https://github.com/jasmindreasond/Browser-Ponies/archive/master.zip" download="browser-ponies-source.zip">browser-ponies-source.zip</a>
+            </p>
 
-        </p>
+            <p>
+                Or with images/sounds:<br/>
+                <a href="https://github.com/jasmindreasond/Browser-Ponies/archive/gh-pages.zip" download="browser-ponies-plus-resources.zip">browser-ponies-plus-resources.zip</a>
+            </p>
 
-        <h2>License</h2>
-        <p>
-            The code of this software is licensed under the MIT license. This applies to all JavaScript files (except basecfg.js and ponycfg.js), HTML, CSS, unix shell script and Python files in this project. The license does not apply to any pony images, *.ini files
-            (or files compiled from these INI files) or sound files. These files are copied from Desktop Ponies. The images and INI files are under various licenses (mostly CC BY-NC-SA 3.0).
-        </p>
+            <h2>Pony Chrome Mania - Files</h2>
+            <p>
+                Use this link in your extension <a href="https://chrome.google.com/webstore/detail/pony-chrome-mania/gmphnjfkihomohapbllmipeojnecjijc" target="_blank">Pony Chrome Mania</a>:<br/> Normal Files:<br/><br/> Pony List: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/desktopponies.txt</strong><br/>                Pony Code: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/ponies.txt</strong><br/> Interactions: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/interactions.txt</strong><br/><br/> Sandbox (Download):
+                <strong><a href="https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/SANDBOX.txt" download>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/SANDBOX.txt</a></strong><br/><br/> Auto Reverse Files:<br/><br/> Pony List:
+                <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/desktopponies.txt</strong><br/> Pony Code: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/ponies.txt<br/></strong>                Interactions: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/interactions.txt<br/><br/></strong> Sandbox (Download): <strong><a href="https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt" download>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt</a></strong>
 
-        <p>Copyright &copy; 2011-2013 Mathias Panzenb&ouml;ck</p>
+            </p>
 
-        <p>
-            Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify,
-            merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-        </p>
+            <h2>License</h2>
+            <p>
+                The code of this software is licensed under the MIT license. This applies to all JavaScript files (except basecfg.js and ponycfg.js), HTML, CSS, unix shell script and Python files in this project. The license does not apply to any pony images, *.ini files
+                (or files compiled from these INI files) or sound files. These files are copied from Desktop Ponies. The images and INI files are under various licenses (mostly CC BY-NC-SA 3.0).
+            </p>
 
-        <p>
-            The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-        </p>
+            <p>Copyright &copy; 2011-2013 Mathias Panzenb&ouml;ck</p>
 
-        <p>
-            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
-            BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-        </p>
+            <p>
+                Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify,
+                merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+            </p>
+
+            <p>
+                The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+            </p>
+
+            <p>
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+                BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+            </p>
+
+        </div>
 
     </div>
 
-    <div id="footer">&copy; 2011-2013 <a href="https://github.com/panzi/Browser-Ponies" target="_blank">Mathias Panzenb&ouml;ck</a> | Page Edited by <a href="https://github.com/JasminDreasond/Browser-Ponies" target="_blank">Jasmin Dreasond</a></div>
+    <div id="footer">&copy; 2011-2013 <a href="https://github.com/panzi/Browser-Ponies" target="_blank">Mathias Panzenb&ouml;ck</a> | Forked by <a href="https://github.com/JasminDreasond/Browser-Ponies" target="_blank">Jasmin Dreasond</a></div>
 
     <!--<div id="pc_m_container" style="position: fixed; width: 450px; height: 30px; background: white; padding: 10px; margin: 0px; border-radius: 5px; color: rgb(41, 66, 86); font-weight: bold; font-size: 16px; opacity: 0.9; box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 12px; left: 458px; top: 311px;"><div id="pc_m_barcontainer" style="margin: 0px; padding: 0px; border-style: none; width: 100%; height: 100%; background: rgb(216, 216, 216); border-radius: 5px;"><div id="pc_m_bar" style="margin: 0px; padding: 0px; border-style: none; width: 450px; height: 100%; background: rgb(155, 214, 244); border-radius: 5px;"></div></div><div id="pc_m_label" style="position: absolute; margin: 0px; padding: 0px; border-style: none; top: 13px; left: 0px; width: 100%; text-align: center;">Loading Ponies… 100%</div></div> -->
 
