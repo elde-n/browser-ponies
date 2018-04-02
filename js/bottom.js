@@ -1,10 +1,10 @@
-jQuery("body").append(
+/*jQuery("body").append(
     jQuery("<div>", { id: "scrollup", class: "glyphicon glyphicon-arrow-up" }).click(function() {
 
         jQuery("html, body").animate({ scrollTop: 0 }, "slow");
 
     }).affix({ offset: { top: 575 } })
-);
+);*/
 
 
 jQuery("#bt_start").click(function() {
@@ -38,6 +38,4 @@ jQuery("#bt_removeall").click(function() {
     void(0);
 });
 
-jQuery("#bookmarks, #bookmarklet").click(function() {
-    void(0);
-});
+jQuery('[data-toggle="tooltip"]').tooltip();
