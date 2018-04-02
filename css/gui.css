@@ -287,9 +287,8 @@ input {
 #footer {
     text-align: center;
     font-size: 0.8em;
-    color: #8BA4B7;
-    margin-top: 10px;
-    text-shadow: white 0 1px 0;
+    margin-top: 10px !important;
+    margin-bottom: -19px;
 }
 
 #ponylist {
@@ -482,8 +481,8 @@ input[type="text"].dropzone {
     }
     #footer {
         margin-top: -25px;
+        margin-bottom: -10px;
         color: #000;
-        opacity: 0.3;
     }
     #ponylist {
         width: auto;
