@@ -1,390 +1,477 @@
 /* http://www.dafont.com/pt/equestria.font */
 
 @font-face {
-font-family: equestria;
-src: url(../fonts/equestria.otf);
+    font-family: equestria;
+    src: url(../fonts/equestria.otf);
 }
-
-
-
-
 
 
 /* Scroll Up */
 
-#scrollup{
-transition: opacity 0.35s, z-index 0.35s;
-opacity: 0;
-z-index: -1;
-cursor: pointer;
-
-}
-#scrollup:before{
-transition: background-color 0.12s;
-border-radius: 50%;
-padding: 15px 12px;
-padding-right: 14px;
-}
-#scrollup:before, #scrollup{
-font-size: 25pt;
-position: fixed;
-bottom: 40px;
-right: 25px;
+#scrollup {
+    transition: opacity 0.35s, z-index 0.35s;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
 }
 
-#scrollup[class*="affix"]:not(.affix-top){
-opacity: 1;
-z-index: 1 !important;
+#scrollup:before {
+    transition: background-color 0.12s;
+    border-radius: 50%;
+    padding: 15px 12px;
+    padding-right: 14px;
 }
 
-.modal-open #scrollup:before[class*="affix"]:not(.affix-top), .hidescroll #scrollup:before[class*="affix"]:not(.affix-top){
-//margin-right: 116px !important;
+#scrollup:before,
+#scrollup {
+    font-size: 25pt;
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
 }
 
-
-#scrollup:before{
-background-color: #adb7d2;
-}
-#scrollup:before, #scrollup{
-color: #FFF;
+#scrollup[class*="affix"]:not(.affix-top) {
+    opacity: 1;
+    z-index: 1 !important;
 }
 
-#scrollup:hover:before{
-background-color: #c6cde0 !important;
-}
-#scrollup:active:before{
-background-color: #c6cde0 !important;
+.modal-open #scrollup:before[class*="affix"]:not(.affix-top),
+.hidescroll #scrollup:before[class*="affix"]:not(.affix-top) {
+    //margin-right: 116px !important;
 }
 
+#scrollup:before {
+    background-color: #adb7d2;
+}
 
+#scrollup:before,
+#scrollup {
+    color: #FFF;
+}
+
+#scrollup:hover:before {
+    background-color: #c6cde0 !important;
+}
+
+#scrollup:active:before {
+    background-color: #c6cde0 !important;
+}
 
 
 /* Restante */
 
-
 body {
-	padding: 35px;
-	font-size: 14px;
-	line-height: 1.5;
-	background: #e6e6e6;
-}
-body, option {
-	font-size: 14px;
+    padding: 35px;
+    font-size: 14px;
+    line-height: 1.5;
+    background: #e6e6e6;
 }
 
-input[type="checkbox"]{margin: -5px 5px 0px 5px;}
+body,
+option {
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin: -5px 5px 0px 5px;
+}
 
 h1 {
-	text-align: center;
-	margin: 0;
-	font-family: equestria;
-	font-size: 35pt;
+    text-align: center;
+    margin: 0;
+    font-family: equestria;
+    font-size: 35pt;
 }
-h1, h2, h3, h4, h5, h6 {
-	color: #4F525A;
-	text-shadow: 1px 1px 1px white;
-	font-family: equestria;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #4F525A;
+    text-shadow: 1px 1px 1px white;
+    font-family: equestria;
 }
+
 #baseurl {
-	width: 175px;
+    width: 175px;
 }
+
 a {
-	font-weight: bold;
-	color: #525A6E;
-	transition: color 0.15s;
+    font-weight: bold;
+    color: #525A6E;
+    transition: color 0.15s;
 }
+
 a:visited {
-	color: #898FA1;
-	text-decoration: none;
+    color: #898FA1;
+    text-decoration: none;
 }
+
 a:hover {
-	color: #97A0B8;
-	text-decoration: none;
+    color: #97A0B8;
+    text-decoration: none;
 }
-a:active, a:focus{text-decoration: none;}
+
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
 .button:hover {
-	color: white;
+    color: white;
 }
+
 .codelabel {
-	font-weight: bold;
+    font-weight: bold;
 }
-.button, button, select {
-	display: inline-block; /* well just screw browsers that don't support this */
-	padding: 5px 15px;
-	margin: 2px;
-	color: white;
-	border: 0px solid transparent;
 
-	cursor: hand;
-	cursor: pointer;
-
-	background: #adb7d2;
-	transition: background 0.15s, background-color 0.15s;
+.button,
+button,
+select {
+    display: inline-block;
+    /* well just screw browsers that don't support this */
+    padding: 5px 15px;
+    margin: 2px;
+    color: white;
+    border: 0px solid transparent;
+    cursor: hand;
+    cursor: pointer;
+    background: #adb7d2;
+    transition: background 0.15s, background-color 0.15s;
 }
+
 a.button:visited {
-	color: white;
+    color: white;
 }
-.button:focus, button:focus, select:focus,
-.button:hover, button:hover, select:hover {
-	background: #c6cde0; outline: none;
+
+.button:focus,
+button:focus,
+select:focus,
+.button:hover,
+button:hover,
+select:hover {
+    background: #c6cde0;
+    outline: none;
 }
-.button:active, button:active, select:active {
-	background: #adb7d2;
+
+.button:active,
+button:active,
+select:active {
+    background: #adb7d2;
 }
-.button.disabled, button:disabled, select:disabled {
-	cursor: default;
-	background: #D3DBE1;
+
+.button.disabled,
+button:disabled,
+select:disabled {
+    cursor: default;
+    background: #D3DBE1;
 }
+
 #bookmarklet {
-	padding: 10px 30px;
-	font-size: 1.2em;
+    padding: 10px 30px;
+    font-size: 1.2em;
 }
+
 #bookmarkletwrapper,
 #bookmarkswrapper {
-	text-align: center;
+    text-align: center;
 }
+
 input,
 #ponylist button,
 table button,
 button.remove,
 button.increase,
 button.decrease {
-	padding: 3px 9px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
+    padding: 3px 9px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
 }
-#controls, #zero {
-	text-align: center;
+
+#controls,
+#zero {
+    text-align: center;
 }
-textarea.code {width: 100%;}
+
+textarea.code {
+    width: 100%;
+}
+
 textarea {
-	margin: 0;
-	padding: 5px;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
 }
-textarea, input {
-	border: 1px solid #8A8A8A;
+
+textarea,
+input {
+    border: 1px solid #8A8A8A;
 }
+
 pre.code {
-	margin-left: 20px;
-	margin-right: 20px;
-	padding: 15px;
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	color: white;
-	background: #333333;
-	background: rgba(0,0,0,0.8);
-	overflow: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    color: white;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: auto;
 }
+
 .keyword {
-	font-weight: bold;
-	color: #B8A36E;
+    font-weight: bold;
+    color: #B8A36E;
 }
+
 .literal {
-	color: #F69B9B;
+    color: #F69B9B;
 }
+
 .comment {
-	color: #7C7C7C;
+    color: #7C7C7C;
 }
-table, #embedcodewrap, #iframewrap {
-	margin: auto;
+
+table,
+#embedcodewrap,
+#iframewrap {
+    margin: auto;
 }
-#embedcodewrap, #iframewrap {
-	width: 200px;
+
+#embedcodewrap,
+#iframewrap {
+    width: 200px;
 }
-#embedcode, #iframe {
-	width: 100%;
-	overflow: hidden;
+
+#embedcode,
+#iframe {
+    width: 100%;
+    overflow: hidden;
 }
+
 #main {
-	position: relative;
-	-moz-border-radius: 20px;
-	border: 1px solid #C6CDE0;
-	border: 1px solid rgba(198, 205, 224,0.8);
-	padding: 35px;
+    position: relative;
+    -moz-border-radius: 20px;
+    border: 1px solid #C6CDE0;
+    border: 1px solid rgba(198, 205, 224, 0.8);
+    padding: 35px;
 }
-#main, textarea, input {
-	background: white;
-	background: rgba(255,255,255,0.8);
+
+#main,
+textarea,
+input {
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
 }
+
 #footer {
-	text-align: center;
-	font-size: 0.8em;
-	color: #8BA4B7;
-	margin-top: 10px;
-	text-shadow: white 0 1px 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #8BA4B7;
+    margin-top: 10px;
+    text-shadow: white 0 1px 0;
 }
+
 #ponylist {
-	margin: auto;
-	width: 410px;
-	height: 400px;
-	overflow: auto;
-	list-style: none;
-	padding: 30px;
-	border: 1px solid rgba(0,0,0,0.2);
+    margin: auto;
+    width: 410px;
+    height: 400px;
+    overflow: auto;
+    list-style: none;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #ponylist li {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 input.number {
-	text-align: right;
-	margin-left: 15px;
-	margin-right: 6px;
+    text-align: right;
+    margin-left: 15px;
+    margin-right: 6px;
 }
 
-.config_ponies td{padding: 0px 5px;}
+.config_ponies td {
+    padding: 0px 5px;
+}
 
 .ponyname {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .ponyimg {
-	min-width: 200px;
-	text-align: center;
-	display: inline-block;
+    min-width: 200px;
+    text-align: center;
+    display: inline-block;
 }
+
 #catselect {
-	position: absolute;
-	background: white;
-	cursor: hand;
-	cursor: pointer;
+    position: absolute;
+    background: white;
+    cursor: hand;
+    cursor: pointer;
 }
+
 #catlist {
-	display: inline;
+    display: inline;
 }
-#catlist, #catselect {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
+
+#catlist,
 #catselect {
-	border-radius:      10px;
-	-moz-border-radius: 10px;
-
-	box-shadow:      2px 2px 12px rgba(0,0,0,0.4);
-	-moz-box-shadow: 2px 2px 12px rgba(0,0,0,0.4);
-
-	padding: 3px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+#catselect {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    padding: 3px;
+}
+
 #catselect li {
-	padding: 3px 5px;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
+    padding: 3px 5px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
 }
+
 #catselect li:hover {
-	background: #898FA1;
-	color: white;
+    background: #898FA1;
+    color: white;
 }
+
 #catlist li {
-	padding: 2px 5px;
-	margin: 2px;
-	display: inline-block;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	background: #D3DBE1;
-	border: 1px solid #8A8A8A;
+    padding: 2px 5px;
+    margin: 2px;
+    display: inline-block;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    background: #D3DBE1;
+    border: 1px solid #8A8A8A;
 }
-#catlist li, #nocatadded {
-	font-size: 0.85em;
+
+#catlist li,
+#nocatadded {
+    font-size: 0.85em;
 }
+
 .delcat {
-	cursor: hand;
-	cursor: pointer;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	padding: 0 2px;
+    cursor: hand;
+    cursor: pointer;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    padding: 0 2px;
 }
+
 .delcat:hover {
-	background: #8A8A8A;
-	color: #D3DBE1;
+    background: #8A8A8A;
+    color: #D3DBE1;
 }
-#nocatadded, li#allcatsadded {
-	color: #A1B4C3;
-}
+
+#nocatadded,
 li#allcatsadded {
-	cursor: default;
+    color: #A1B4C3;
 }
+
+li#allcatsadded {
+    cursor: default;
+}
+
 li#allcatsadded:hover {
-	color: #A1B4C3;
-	background: white;
+    color: #A1B4C3;
+    background: white;
 }
-p, #filterwrapper {
-	margin-top: 1em;
-	margin-bottom: 1em;
+
+p,
+#filterwrapper {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
+
 .dropzone {
-	background-color: white;
-	padding: 20px;
-	text-align: center;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	border: 1px solid #8A8A8A;
-
-	position: relative;
-	overflow: hidden;
-	cursor: hand;
-	cursor: pointer;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 1px solid #8A8A8A;
+    position: relative;
+    overflow: hidden;
+    cursor: hand;
+    cursor: pointer;
 }
+
 .dropzone input[type="file"] {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	border-style: none;
-	filter: alpha(opacity=0);
-	opacity: 0;
-	cursor: hand;
-	cursor: pointer;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    cursor: hand;
+    cursor: pointer;
 }
+
 .dragover {
-	background-color: #898FA1;
-	color: white;
+    background-color: #898FA1;
+    color: white;
 }
+
 .file .dropzone {
-	padding: 0px 5px;
-	border-radius: 5px;
+    padding: 0px 5px;
+    border-radius: 5px;
 }
+
 input[type="text"] {
-	padding: 3px 9px;
+    padding: 3px 9px;
 }
+
 input[type="text"].dropzone {
-	cursor: auto;
-	text-align: left;
-	padding: 3px 9px;
+    cursor: auto;
+    text-align: left;
+    padding: 3px 9px;
 }
+
 #own-ponies .name {
-	font-weight: bold;
-	font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.2em;
 }
+
 #own-ponies li.pony {
-	list-style: none;
+    list-style: none;
 }
 
-#ponylist input[type="text"]{margin-left: 6px;}
-#ponylist button{margin-left: 6px;margin-top: 15px;}
+#ponylist input[type="text"] {
+    margin-left: 6px;
+}
 
-
-
-
-
+#ponylist button {
+    margin-left: 6px;
+    margin-top: 15px;
+}
 
 @media (max-width: 768px) {
-	
-body{padding: 0px;}	
-#main.container{padding: 20px;}
-
-#footer{
-margin-top: -25px;
-color: #000;
-opacity: 0.3;
-}
-
-#ponylist{
-width: auto;
-text-align: center;
-overflow-x: hidden;
-}
-	
+    body {
+        padding: 0px;
+    }
+    #main.container {
+        padding: 20px;
+    }
+    #footer {
+        margin-top: -25px;
+        color: #000;
+        opacity: 0.3;
+    }
+    #ponylist {
+        width: auto;
+        text-align: center;
+        overflow-x: hidden;
+    }
 }
