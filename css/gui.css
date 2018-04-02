@@ -8,6 +8,18 @@
 
 /* Scroll Up */
 
+.navbar-inverse {
+    background-color: #22252b;
+    border-color: #22252b;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #4f525a;
+}
+
 #scrollup {
     transition: opacity 0.35s, z-index 0.35s;
     opacity: 0;
