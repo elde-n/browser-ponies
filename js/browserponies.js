@@ -2459,7 +2459,7 @@ if (typeof(BrowserPonies) !== "object") {
 
         EffectInstance.prototype = extend(new Instance(), {
             createImage: function(src) {
-                var img = tag(Gecko || Opera ? 'img' : 'iframe', {
+                var img = tag('img', {
                     src: src,
                     draggable: 'false',
                     style: {
