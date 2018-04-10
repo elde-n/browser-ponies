@@ -73,5 +73,39 @@ jQuery("body").ready(function() {
         .on("dragleave", function() { dragleaveDropzone.call(this, event); })
         .on("mousemove", function() { mousemoveDropzone.call(this, event); });
 
+    jQuery("#bt_start").click(function() {
+        BrowserPonies.start();
+        void(0);
+    });
+    jQuery("#bt_stop").click(function() {
+        BrowserPonies.stop();
+        void(0);
+    });
+    jQuery("#bt_pause").click(function() {
+        BrowserPonies.pause();
+        void(0);
+    });
+    jQuery("#bt_resume").click(function() {
+        BrowserPonies.resume();
+        void(0);
+    });
+    jQuery("#bt_toggle").click(function() {
+        BrowserPonies.togglePoniesToBackground();
+        void(0);
+    });
+    jQuery("#bt_removeall").click(function() {
+        BrowserPonies.unspawnAll();
+        BrowserPonies.stop();
+        void(0);
+    });
+    jQuery('[data-toggle="tooltip"]').tooltip();
+
+    /*jQuery("body").append(
+    jQuery("<div>", { id: "scrollup", class: "glyphicon glyphicon-arrow-up" }).click(function() {
+
+        jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+
+    }).affix({ offset: { top: 575 } })
+    );*/
 
 });
