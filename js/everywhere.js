@@ -90,12 +90,7 @@ function loadConfig() {
     if (!config) {
         config = {
             spawn: {
-                "rainbow dash": 1,
-                "pinkie pie": 1,
-                "applejack": 1,
-                "twilight sparkle": 1,
-                "fluttershy": 1,
-                "rarity": 1
+                "derpy hooves": 1
             }
         };
     }
@@ -162,7 +157,7 @@ function loadPage() {
 
     if (url) {
         if (!/^[a-z0-9]+:/.test(url)) {
-            url = "http://" + url.replace(/^\/+/, '');
+            url = "https://" + url.replace(/^\/+/, '');
         }
 
         if (url !== iframe.src) {
