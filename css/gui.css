@@ -298,8 +298,26 @@ input {
 
 input.number {
     text-align: right;
-    margin-left: 15px;
-    margin-right: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 67px;
+    display: inline;
+    margin-left: 12px;
+}
+
+#own-baseurl{
+    width: 100%;
+    min-width: 100%;
+    display: block;
+}
+
+.own-baseurl-base{
+    width: 100%;   
+}
+
+#ponylist input.number{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .config_ponies td {

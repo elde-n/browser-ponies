@@ -294,12 +294,13 @@ function ponyCountId(name) {
 function render(name, image, count, categories) {
     var input_id = ponyCountId(name);
     var input = tag('input', {
-        type: 'text',
-        'class': 'number',
+        type: 'number',
+        'class': 'form-control number',
         name: 'count',
         value: count,
         'data-value': count,
         'data-min': 0,
+        'min': 0,
         'data-decimals': 0,
         'data-pony': name,
         id: input_id,

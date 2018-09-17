@@ -167,7 +167,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr>
                         <td><label for="iframe-width">Width:</label></td>
                         <td>
-                            <input type="text" class="number" id="iframe-width" value="640" data-value="640" data-min="10" data-decimals="0" data-step="10" size="3" />
+                            <input type="number" class="form-control number" min="0" id="iframe-width" value="640" data-value="640" data-min="10" data-decimals="0" data-step="10" size="3" />
                         </td>
                         <td>px</td>
                         <td>
@@ -179,7 +179,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr>
                         <td><label for="iframe-height">Height:</label></td>
                         <td>
-                            <input type="text" class="number" id="iframe-height" value="480" data-value="480" data-min="10" data-decimals="0" data-step="10" size="3" />
+                            <input type="number" class="form-control number" min="0" id="iframe-height" value="480" data-value="480" data-min="10" data-decimals="0" data-step="10" size="3" />
                         </td>
                         <td>px</td>
                         <td>
@@ -234,7 +234,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr>
                         <td><label for="speed">Speed Multiplier:</label></td>
                         <td>
-                            <input type="text" class="number" id="speed" value="3.0" data-value="3.0" data-min="0.1" data-decimals="1" data-step="0.1" size="3" />
+                            <input type="number" class="form-control number" min="0" id="speed" value="3.0" data-value="3.0" data-min="0.1" data-decimals="1" data-step="0.1" size="3" />
                         </td>
                         <td></td>
                         <td>
@@ -246,7 +246,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr data-toggle="tooltip" title="Even if this is 0% ponies will speak if an animation requires it.">
                         <td><label for="speak">Random Speak Probability:</label></td>
                         <td>
-                            <input type="text" class="number" id="speak" value="15" data-value="15" data-min="0" data-max="100" data-decimals="0" size="3" />
+                            <input type="number" class="form-control number" min="0" id="speak" value="15" data-value="15" data-min="0" data-max="100" data-decimals="0" size="3" />
                         </td>
                         <td>%</td>
                         <td>
@@ -258,7 +258,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr>
                         <td><label for="volume">Volume:</label></td>
                         <td>
-                            <input type="text" class="number" id="volume" value="100" data-value="100" data-min="0" data-max="100" data-decimals="0" data-step="10" size="3" />
+                            <input type="number" class="form-control number" min="0" id="volume" value="100" data-value="100" data-min="0" data-max="100" data-decimals="0" data-step="10" size="3" />
                         </td>
                         <td>%</td>
                         <td>
@@ -270,7 +270,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr>
                         <td><label for="fps">Frames per Second:</label></td>
                         <td>
-                            <input type="text" class="number" id="fps" value="25" data-value="25" data-min="1" data-decimals="0" size="3" />
+                            <input type="number" class="form-control number" min="0" id="fps" value="25" data-value="25" data-min="1" data-decimals="0" size="3" />
                         </td>
                         <td></td>
                         <td>
@@ -282,7 +282,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr>
                         <td><label for="fade">Fade Duration:</label></td>
                         <td>
-                            <input type="text" class="number" id="fade" value="0.5" data-value="0.5" data-min="0" data-decimals="1" data-step="0.1" size="3" />
+                            <input type="number" class="form-control number" min="0" id="fade" value="0.5" data-value="0.5" data-min="0" data-decimals="1" data-step="0.1" size="3" />
                         </td>
                         <td>sec</td>
                         <td>
@@ -421,8 +421,8 @@ you can use this embed code to confine the ponies into an iframe:</label>
             <ul id="own-interactions"></ul>
 
             <p>
-                <label data-toggle="tooltip" title="Common prefix of image/audio file URLs of all ponies. (Not needed if you embed the files.)">Base URL:
-<input type="text" id="own-baseurl"/></label>
+                <label class="own-baseurl-base" data-toggle="tooltip" title="Common prefix of image/audio file URLs of all ponies. (Not needed if you embed the files.)">Base URL:
+<input type="text" class="form-control" id="own-baseurl"/></label>
             </p>
 
             <p>
