@@ -108,4 +108,10 @@ jQuery("body").ready(function() {
     }).affix({ offset: { top: 575 } })
     );*/
 
+    jQuery("[absUrl='true']").each(function() {
+        jQuery(this).text(absUrl(jQuery(this).text())).removeAttr("absUrl");
+    }).livequery(function() {
+        jQuery(this).text(absUrl(jQuery(this).text())).removeAttr("absUrl");
+    });
+
 });

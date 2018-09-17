@@ -79,6 +79,10 @@ body {
     background: #e6e6e6;
 }
 
+textarea {
+    resize: vertical;
+}
+
 body,
 option {
     font-size: 14px;
@@ -206,18 +210,6 @@ button.decrease {
     text-align: center;
 }
 
-textarea.code {
-    width: 100%;
-}
-
-textarea {
-    margin: 0;
-    padding: 5px;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-}
-
-textarea,
 input {
     border: 1px solid #8A8A8A;
 }
@@ -278,7 +270,6 @@ table,
 }
 
 #main,
-textarea,
 input {
     background: white;
     background: rgba(255, 255, 255, 0.8);

@@ -32,20 +32,21 @@
     <title>Browser Ponies</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="css/gui.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap_pc.css" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
     <script type="text/javascript">
         jQuery.noConflict();
     </script>
-    <script type="text/javascript" src="js/plugins/jquery.cookies.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha384-tSi+YsgNwyohDGfW/VhY51IK3RKAPYDcj1sNXJ16oRAyDP++K0NCzSCUW78EMFmf" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/livequery/1.1.1/jquery.livequery.min.js" integrity="sha384-zm9muj5jNH5N/S+c0t2kcDKyTnHDNlBzXRgauYPXgwi8hOqBf7D4vSjNMfdUR6ev" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/ponylist.js"></script>
     <script type="text/javascript" src="js/ponycfg.js" id="browser-ponies-config"></script>
     <script type="text/javascript" src="js/browserponies.js" id="browser-ponies-script"></script>
     <script type="text/javascript" src="js/gui-common.js"></script>
     <script type="text/javascript" src="js/gui.js"></script>
-    <script type="text/javascript" src="js/plugins/bootstrap.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/top.js"></script>
 </head>
 
@@ -139,7 +140,7 @@ Magic</cite> is &copy; by <a href="http://www.hubworld.com/my-little-pony/shows/
 
             <p>
                 <label for="embedcode">Or paste this into your webpage:</label>
-                <div id="embedcodewrap"><textarea id="embedcode"></textarea></div>
+                <div id="embedcodewrap"><textarea class="form-control" id="embedcode"></textarea></div>
             </p>
 
             <p>
@@ -189,7 +190,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
             </table>
 
             <p>
-                <div id="iframewrap"><textarea id="iframe"></textarea></div>
+                <div id="iframewrap"><textarea class="form-control" id="iframe"></textarea></div>
             </p>
 
         </div>
@@ -429,7 +430,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
 
             <p>
                 <label for="javascript-output">your-ponies.js:</label>
-                <textarea class="code" id="javascript-output" rows="8"></textarea>
+                <textarea class="form-control" class="code" id="javascript-output" rows="8"></textarea>
             </p>
 
             <p>
@@ -470,9 +471,12 @@ you can use this embed code to confine the ponies into an iframe:</label>
 
             <h2>Pony Chrome Mania - Files</h2>
             <p>
-                Use this link in your extension <a href="https://chrome.google.com/webstore/detail/pony-chrome-mania/gmphnjfkihomohapbllmipeojnecjijc" target="_blank">Pony Chrome Mania</a>:<br/> Normal Files:<br/><br/> Pony List: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/desktopponies.txt</strong><br/>                Pony Code: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/ponies.txt</strong><br/> Interactions: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/interactions.txt</strong><br/><br/> Sandbox (Download):
-                <strong><a href="https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/SANDBOX.txt" download>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Normal/SANDBOX.txt</a></strong><br/><br/> Auto Reverse Files:<br/><br/> Pony List:
-                <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/desktopponies.txt</strong><br/> Pony Code: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/ponies.txt<br/></strong>                Interactions: <strong>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/interactions.txt<br/><br/></strong> Sandbox (Download): <strong><a href="https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt" download>https://jasmindreasond.github.io/Browser-Ponies/pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt</a></strong>
+
+                Use this link in your extension <a href="https://chrome.google.com/webstore/detail/pony-chrome-mania/gmphnjfkihomohapbllmipeojnecjijc" target="_blank">Pony Chrome Mania</a>:<br/> Normal Files:<br/><br/> Pony List: <strong absUrl="true">pc_m/Normal/desktopponies.txt</strong><br/>                Pony Code: <strong absUrl="true">pc_m/Normal/ponies.txt</strong><br/> Interactions: <strong absUrl="true">pc_m/Normal/interactions.txt</strong><br/><br/> Sandbox (Download):
+                <strong><a href="pc_m/Normal/SANDBOX.txt" download absUrl="true">pc_m/Normal/SANDBOX.txt</a></strong><br/><br/> Auto Reverse Files:<br/><br/> Pony List:
+                <strong absUrl="true">pc_m/Work%20with%20Auto-Reverse/desktopponies.txt</strong><br/> Pony Code: <strong absUrl="true">pc_m/Work%20with%20Auto-Reverse/ponies.txt<br/></strong>
+                <br/>Interactions: <strong absUrl="true">pc_m/Work%20with%20Auto-Reverse/interactions.txt<br/><br/></strong>
+                <br/><br/> Sandbox (Download): <strong><a href="pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt" download absUrl="true">pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt</a></strong>
 
             </p>
 
