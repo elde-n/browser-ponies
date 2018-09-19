@@ -1,9 +1,21 @@
+jQuery.fn.freezeTextInput = function(value) {
+
+    var theOriginalI = absUrl(value);
+    this.data("originalValue", theOriginalI).val(theOriginalI).click(function() {
+        jQuery(this).select();
+    }).change(function() {
+        jQuery(this).val(jQuery(this).data("originalValue"));
+    });
+
+    return this;
+
+};
+
 jQuery("body").ready(function() {
 
     init();
     updateConfig();
     initScriptUrl();
-    jQuery("#embedcode, #iframe").click(function() { this.select(); });
 
     jQuery("#btpx_1").click(function() { increaseNumberField.call($('iframe-width')); });
     jQuery("#btpx_2").click(function() { decreaseNumberField.call($('iframe-width')); });
@@ -110,13 +122,7 @@ jQuery("body").ready(function() {
 
     var absURL = function() {
         if ((jQuery(this).prop("tagName") == "INPUT") && (jQuery(this).attr("type") == "text")) {
-
-
-            jQuery(this).val(absUrl(jQuery(this).val())).removeAttr("absUrl").click(function() {
-                $(this).select();
-            });
-
-
+            jQuery(this).removeAttr("absUrl").freezeTextInput(jQuery(this).val());
         } else {
             jQuery(this).text(absUrl(jQuery(this).text())).removeAttr("absUrl");
         }

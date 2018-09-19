@@ -2,6 +2,7 @@
 
 // just so that the bookmarklet also works here:
 var BrowserPoniesBaseConfig = {};
+var firstLoading = true;
 
 var oldConfig = {};
 var PonyScripts = {
@@ -85,11 +86,24 @@ function updateConfig() {
     var config = dumpConfig();
     var code = ponyCode(config);
 
-    $('bookmarklet').href = 'javascript:' + code + 'void(0)';
-    $('embedcode').value = embedCode(config);
+    var tinyupdates = {
+        bookmarklet: 'javascript:' + code + 'void(0)',
+        embedcode: embedCode(config),
+        iframe: iframeEmbedCode(config)
+    };
+
+    if (firstLoading == true) {
+        firstLoading = false;
+        jQuery("#embedcode, #iframe").freezeTextInput("");
+    }
+
+    $('bookmarklet').href = tinyupdates.bookmarklet;
+    $('embedcode').value = tinyupdates.embedcode;
+    jQuery("#embedcode").data("originalValue", tinyupdates.embedcode);
 
     var baseurl = config.baseurl;
-    $('iframe').value = iframeEmbedCode(config);
+    $('iframe').value = tinyupdates.iframe;
+    jQuery("#iframe").data("originalValue", tinyupdates.iframe);
     delete config.paddock;
     delete config.grass;
 
