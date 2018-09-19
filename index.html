@@ -246,7 +246,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr data-toggle="tooltip" title="Even if this is 0% ponies will speak if an animation requires it.">
                         <td><label for="speak">Random Speak Probability:</label></td>
                         <td>
-                            <input type="number" class="form-control number" min="0" id="speak" value="15" data-value="15" data-min="0" data-max="100" data-decimals="0" size="3" />
+                            <input type="number" class="form-control number" min="0" max="100" id="speak" value="15" data-value="15" data-min="0" data-max="100" data-decimals="0" size="3" />
                         </td>
                         <td>%</td>
                         <td>
@@ -258,7 +258,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
                     <tr>
                         <td><label for="volume">Volume:</label></td>
                         <td>
-                            <input type="number" class="form-control number" min="0" id="volume" value="100" data-value="100" data-min="0" data-max="100" data-decimals="0" data-step="10" size="3" />
+                            <input type="number" class="form-control number" min="0" max="100" id="volume" value="100" data-value="100" data-min="0" data-max="100" data-decimals="0" data-step="10" size="3" />
                         </td>
                         <td>%</td>
                         <td>
@@ -473,11 +473,36 @@ you can use this embed code to confine the ponies into an iframe:</label>
             <h2>Pony Chrome Mania - Files</h2>
             <p>
 
-                Use this link in your extension <a href="https://chrome.google.com/webstore/detail/pony-chrome-mania/gmphnjfkihomohapbllmipeojnecjijc" target="_blank">Pony Chrome Mania</a>:<br/> Normal Files:<br/><br/> Pony List: <strong absUrl="true">pc_m/Normal/desktopponies.txt</strong><br/>                Pony Code: <strong absUrl="true">pc_m/Normal/ponies.txt</strong><br/> Interactions: <strong absUrl="true">pc_m/Normal/interactions.txt</strong><br/><br/> Sandbox (Download):
-                <strong><a href="pc_m/Normal/SANDBOX.txt" download absUrl="true">pc_m/Normal/SANDBOX.txt</a></strong><br/><br/> Auto Reverse Files:<br/><br/> Pony List:
-                <strong absUrl="true">pc_m/Work%20with%20Auto-Reverse/desktopponies.txt</strong><br/> Pony Code: <strong absUrl="true">pc_m/Work%20with%20Auto-Reverse/ponies.txt<br/></strong>
-                <br/>Interactions: <strong absUrl="true">pc_m/Work%20with%20Auto-Reverse/interactions.txt<br/><br/></strong>
-                <br/><br/> Sandbox (Download): <strong><a href="pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt" download absUrl="true">pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt</a></strong>
+                Use this link in your extension 
+                <a href="https://chrome.google.com/webstore/detail/pony-chrome-mania/gmphnjfkihomohapbllmipeojnecjijc" target="_blank">Pony Chrome Mania</a>:
+                
+                <br/><br/>
+                
+                <strong>Normal Files:</strong>
+                
+                <br/><br/>
+
+                Pony List:<input type="text" class="form-control" absUrl="true" value="pc_m/Normal/desktopponies.txt" /><br/>
+                Pony Code: <input type="text" class="form-control" absUrl="true" value="pc_m/Normal/ponies.txt" /><br/>
+                Interactions: <input type="text" class="form-control" absUrl="true" value="pc_m/Normal/interactions.txt" />
+                
+                <br/>
+                
+                Sandbox (Download): <strong><a href="pc_m/Normal/SANDBOX.txt" download absUrl="true">pc_m/Normal/SANDBOX.txt</a></strong>
+                
+                <br/><br/>
+                
+                <strong>Auto Reverse Files:</strong>
+                
+                <br/><br/> 
+                
+                Pony List: <input type="text" class="form-control" absUrl="true" value="pc_m/Work%20with%20Auto-Reverse/desktopponies.txt" /><br/> 
+                Pony Code: <input type="text" class="form-control" absUrl="true" value="pc_m/Work%20with%20Auto-Reverse/ponies.txt" /><br/>
+                Interactions: <input type="text" class="form-control" absUrl="true" value="pc_m/Work%20with%20Auto-Reverse/interactions.txt" />
+                
+                <br/>
+                
+                Sandbox (Download): <strong><a href="pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt" download absUrl="true">pc_m/Work%20with%20Auto-Reverse/SANDBOX.txt</a></strong>
 
             </p>
 

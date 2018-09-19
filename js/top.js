@@ -108,10 +108,20 @@ jQuery("body").ready(function() {
     }).affix({ offset: { top: 575 } })
     );*/
 
-    jQuery("[absUrl='true']").each(function() {
-        jQuery(this).text(absUrl(jQuery(this).text())).removeAttr("absUrl");
-    }).livequery(function() {
-        jQuery(this).text(absUrl(jQuery(this).text())).removeAttr("absUrl");
-    });
+    var absURL = function() {
+        if ((jQuery(this).prop("tagName") == "INPUT") && (jQuery(this).attr("type") == "text")) {
+
+
+            jQuery(this).val(absUrl(jQuery(this).val())).removeAttr("absUrl").click(function() {
+                $(this).select();
+            });
+
+
+        } else {
+            jQuery(this).text(absUrl(jQuery(this).text())).removeAttr("absUrl");
+        }
+    };
+
+    jQuery("[absUrl='true']").each(absURL).livequery(absURL);
 
 });
