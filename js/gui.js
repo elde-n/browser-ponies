@@ -94,7 +94,7 @@ function updateConfig() {
 
     if (firstLoading == true) {
         firstLoading = false;
-        jQuery("#embedcode, #iframe").freezeTextInput("");
+        jQuery("#embedcode, #iframe, #javascript-output").freezeTextInput();
     }
 
     $('bookmarklet').href = tinyupdates.bookmarklet;
@@ -770,7 +770,9 @@ function removeItem(event) {
 }
 
 function inisToJS() {
-    $("javascript-output").value = ownPoniesScript();
+    var tinycoderesult = ownPoniesScript();
+    jQuery("#javascript-output").data("originalValue", tinycoderesult);
+    $("javascript-output").value = tinycoderesult;
 }
 
 function ownPoniesScript() {

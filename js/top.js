@@ -1,7 +1,7 @@
 jQuery.fn.freezeTextInput = function(value) {
 
-    var theOriginalI = absUrl(value);
-    this.data("originalValue", theOriginalI).val(theOriginalI).click(function() {
+    if (typeof value == "undefined") { value = ""; }
+    this.data("originalValue", value).val(value).click(function() {
         jQuery(this).select();
     }).change(function() {
         jQuery(this).val(jQuery(this).data("originalValue"));
@@ -122,7 +122,7 @@ jQuery("body").ready(function() {
 
     var absURL = function() {
         if ((jQuery(this).prop("tagName") == "INPUT") && (jQuery(this).attr("type") == "text")) {
-            jQuery(this).removeAttr("absUrl").freezeTextInput(jQuery(this).val());
+            jQuery(this).removeAttr("absUrl").freezeTextInput(absUrl(jQuery(this).val()));
         } else {
             jQuery(this).text(absUrl(jQuery(this).text())).removeAttr("absUrl");
         }

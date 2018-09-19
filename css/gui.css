@@ -81,6 +81,7 @@ body {
 
 textarea {
     resize: vertical;
+    overflow: auto;
 }
 
 body,
@@ -305,17 +306,17 @@ input.number {
     margin-left: 12px;
 }
 
-#own-baseurl{
+#own-baseurl {
     width: 100%;
     min-width: 100%;
     display: block;
 }
 
-.own-baseurl-base{
-    width: 100%;   
+.own-baseurl-base {
+    width: 100%;
 }
 
-#ponylist input.number{
+#ponylist input.number {
     margin-top: 0px;
     margin-bottom: 0px;
 }
