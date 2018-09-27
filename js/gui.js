@@ -474,7 +474,9 @@ function fileReaderError(event) {
     } else {
         alert("Error reading file.");
     }
-    console.error(event);
+    if (tinydebugBrowserPonies == true) {
+        console.error(event);
+    }
 }
 
 function loadNamedResult(load, name) {
