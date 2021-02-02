@@ -1,5 +1,5 @@
 The code of this software is licensed under the MIT license. This applies to all
-JavaScript files (except basecfg.js and ponycfg.js), HTML, CSS, unix shell script
+JavaScript files (except ponybase.js), HTML, CSS, unix shell script
 and Python files in this project. The license does not apply to any pony images,
 *.ini files (or files compiled from these INI files) or sound files. These files
 are copied from Desktop Ponies. The images and INI files are under various
