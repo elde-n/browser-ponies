@@ -213,7 +213,7 @@ function startsystem() {
                 copyrighttext_git +
                 '<randomtags>' + ponylistcategory_git_complete + '</randomtags>\n' +
                 '<randomname>Random Pony</randomname>\n' +
-                '<randomimg>source-base(url)ponies/random%20pony/random-pony.gif</randomimg>\n' +
+                '<randomimg>source-base(url)ponies/Random%20Pony/random-pony.gif</randomimg>\n' +
                 '<randomsystem>\n\n\n\n' +
                 listponylist
             ], { type: "text/plain;charset=utf-8" });
