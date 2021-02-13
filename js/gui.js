@@ -6,9 +6,11 @@ var firstLoading = true;
 
 var oldConfig = {};
 var PonyScripts = {
+    'browser-ponies-base': absUrl('js/ponybase.js'),
+    'browser-ponies-script': absUrl('js/browserponies.js'),
     'browser-ponies-script': absUrl('js/browserponies.js'),
     'browser-ponies-config': absUrl('js/basecfg.js'),
-    'browser-ponies-base': absUrl('js/ponycfg.js')
+    'browser-ponies-cfg': absUrl('js/ponycfg.js')
 };
 
 function loadingJson(script) {
@@ -61,6 +63,7 @@ function embedCode(config) {
     copy.autostart = true;
     return (
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-base'] + '"></script>' +
+        '<script type="text/javascript" src="' + PonyScripts['browser-ponies-cfg'] + '"></script>' +
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-config'] + '" id="browser-ponies-config"></script>' +
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-script'] + '" id="browser-ponies-script"></script>' +
         '<script type="text/javascript">/* <![CDATA[ */ ' +
@@ -854,6 +857,9 @@ function ownPoniesScript() {
         delete config.spawn;
     }
     if (config.interactions.length === 0) delete config.interactions;
+    config = JSON.stringify(config)
+    .replace('BrowserPoniesBaseConfig.interactions', JSON.stringify(BrowserPoniesBaseConfig.interactions))
+    .replace('BrowserPoniesBaseConfig.ponies', JSON.stringify(BrowserPoniesBaseConfig.ponies));
 
     return "BrowserPonies.loadConfig(" + JSON.stringify(config) + ");";
 }
