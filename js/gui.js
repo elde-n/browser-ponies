@@ -155,7 +155,7 @@ function updateConfig() {
 
     if (changed) {
         config.baseurl = baseurl;
-        $('bookmarks').href = dataUrl('text/html', bookmarksMenu(config));
+        //$('bookmarks').href = dataUrl('text/html', bookmarksMenu(config));
         oldConfig = config;
     }
 }
