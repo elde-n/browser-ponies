@@ -9,7 +9,6 @@ var PonyScripts = {
     'browser-ponies-base': absUrl('js/ponybase.js'),
     'browser-ponies-base-fix': absUrl('js/ponybase-fix.js'),
     'browser-ponies-script': absUrl('js/browserponies.js'),
-    'browser-ponies-script': absUrl('js/browserponies.js'),
     'browser-ponies-config': absUrl('js/basecfg.js'),
     'browser-ponies-cfg': absUrl('js/ponycfg.js')
 };
@@ -17,7 +16,7 @@ var PonyScripts = {
 function loadingJson(script) {
     if (!script.readyState || script.readyState === "complete") {
         if (!document.body) {
-            observe(window, 'load', function() {
+            observe(window, 'load', function () {
                 oldConfig = {};
                 updateConfig();
             });
@@ -28,7 +27,7 @@ function loadingJson(script) {
     }
 }
 
-if (typeof(JSON) === "undefined") {
+if (typeof (JSON) === "undefined") {
     document.write('<script type="text/javascript" ' +
         'src="https://raw.github.com/douglascrockford/JSON-js/master/json2.js" ' +
         'onload="loadingJson(this)" ' +
@@ -46,8 +45,8 @@ function toggleBrowserPoniesToBackground() {
 }
 
 function ponyCode(config) {
-    var code = '(' + starter.toString() + ')(';
-    if (typeof(JSON) === "undefined") {
+    var code = '(function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
+    if (typeof (JSON) === "undefined") {
         code += '{},{});';
     } else {
         code += JSON.stringify(PonyScripts) + ',' +
@@ -83,7 +82,7 @@ function iframeEmbedCode(config) {
     config.paddock = $('paddock').checked;
     config.grass = $('grass').checked;
     return '<iframe src="' + absUrl("ponies-iframe.html#" +
-            configToQueryString(config)) + '" style="overflow:hidden;border-style:none;margin:0;' +
+        configToQueryString(config)) + '" style="overflow:hidden;border-style:none;margin:0;' +
         'padding:0;background:transparent;width:' + iframeWidth + 'px;' + iframeHeight + 'px;" ' +
         'width="' + iframeWidth + '" height="' + iframeHeight + '" ' +
         'frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>';
@@ -160,9 +159,9 @@ function updateConfig() {
     }
 }
 
-var starter = function(srcs, cfg) {
+var starter = function (srcs, cfg) {
     var cbcount = 1;
-    var callback = function() {
+    var callback = function () {
         --cbcount;
         if (cbcount === 0) {
             BrowserPonies.setBaseUrl(cfg.baseurl);
@@ -171,20 +170,31 @@ var starter = function(srcs, cfg) {
                 BrowserPoniesBaseConfig.loaded = true;
             }
             BrowserPonies.loadConfig(cfg);
-            if (!BrowserPonies.running()) BrowserPonies.start();
+
+            try {
+                if (!BrowserPonies.running()) { BrowserPonies.start(); }
+            } catch (err) {
+                var checkExist = setInterval(function () {
+                    if (document.getElementById('browser-ponies-base-fix') && document.getElementById('browser-ponies-base')) {
+                        BrowserPoniesStarter(srcs, cfg);
+                        clearInterval(checkExist);
+                    }
+                }, 100);
+            }
+
         }
     };
 
-    if (typeof(BrowserPoniesConfig) === "undefined") {
+    if (typeof (BrowserPoniesConfig) === "undefined") {
         window.BrowserPoniesConfig = {};
     }
 
-    if (typeof(BrowserPoniesBaseConfig) === "undefined") {
+    if (typeof (BrowserPoniesBaseConfig) === "undefined") {
         ++cbcount;
         BrowserPoniesConfig.onbasecfg = callback;
     }
 
-    if (typeof(BrowserPonies) === "undefined") {
+    if (typeof (BrowserPonies) === "undefined") {
         ++cbcount;
         BrowserPoniesConfig.oninit = callback;
     }
@@ -267,7 +277,7 @@ function bookmarksMenu(config) {
 }
 
 function dragoverHandler(supportedTypes) {
-    return function(event) {
+    return function (event) {
         var files = event.dataTransfer.files;
         var accept = false;
 
@@ -485,7 +495,7 @@ function fileReaderError(event) {
 }
 
 function loadNamedResult(load, name) {
-    return function(event) {
+    return function (event) {
         load(event.target.result, name);
     };
 }
@@ -526,7 +536,7 @@ function upOrSelfClass(el, className) {
 }
 
 function loadResultInto(input) {
-    return function(event) {
+    return function (event) {
         input.value = event.target.result;
     };
 }
@@ -647,14 +657,14 @@ function loadPony(text, name) {
             tag('label', 'Action: ',
                 tag('select', { 'class': 'file-action' },
                     tag('option', {
-                            value: 'fix-names',
-                            title: 'Only use the files to fix the case of the filenames. (The web is case sensitive.)'
-                        },
+                        value: 'fix-names',
+                        title: 'Only use the files to fix the case of the filenames. (The web is case sensitive.)'
+                    },
                         'Fix Filenames'),
                     tag('option', {
-                            value: 'embed',
-                            title: 'Embed files directly in the generated script as data URLs. (Result will not work in Internet Explorer.)'
-                        },
+                        value: 'embed',
+                        title: 'Embed files directly in the generated script as data URLs. (Result will not work in Internet Explorer.)'
+                    },
                         'Embed Files'))),
             tag('button', { onclick: resetFilenames }, 'Reset Filenames')),
         tag('table', { 'class': 'files' },
@@ -801,7 +811,7 @@ function ownPoniesScript() {
         var pony = JSON.parse(li.getAttribute("data-pony"));
         var filemap = {};
 
-        var getUrl = function(filename) {
+        var getUrl = function (filename) {
             return filemap[decodeURIComponent(filename || "").toLowerCase()];
         };
 
@@ -860,8 +870,8 @@ function ownPoniesScript() {
     }
     if (config.interactions.length === 0) delete config.interactions;
     config = JSON.stringify(config)
-    .replace('BrowserPoniesBaseConfig.interactions', JSON.stringify(BrowserPoniesBaseConfig.interactions))
-    .replace('BrowserPoniesBaseConfig.ponies', JSON.stringify(BrowserPoniesBaseConfig.ponies));
+        .replace('BrowserPoniesBaseConfig.interactions', JSON.stringify(BrowserPoniesBaseConfig.interactions))
+        .replace('BrowserPoniesBaseConfig.ponies', JSON.stringify(BrowserPoniesBaseConfig.ponies));
 
     return "BrowserPonies.loadConfig(" + JSON.stringify(config) + ");";
 }
