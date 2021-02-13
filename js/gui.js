@@ -8,8 +8,7 @@ var oldConfig = {};
 var PonyScripts = {
     'browser-ponies-base': absUrl('js/ponybase.js'),
     'browser-ponies-script': absUrl('js/browserponies.js'),
-    'browser-ponies-config': absUrl('js/basecfg.js'),
-    'browser-ponies-cfg': absUrl('js/ponycfg.js')
+    'browser-ponies-config': absUrl('js/basecfg.js')
 };
 
 function loadingJson(script) {
@@ -44,7 +43,7 @@ function toggleBrowserPoniesToBackground() {
 }
 
 function ponyCode(config) {
-    var code = '(function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
+    var code = 'var BrowserPoniesConfig = { autostart: true, spawn: {}, spawnRandom: 1}; (function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
     if (typeof (JSON) === "undefined") {
         code += '{},{});';
     } else {
@@ -62,7 +61,6 @@ function embedCode(config) {
     copy.autostart = true;
     return (
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-base'] + '"></script>' +
-        '<script type="text/javascript" src="' + PonyScripts['browser-ponies-cfg'] + '"></script>' +
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-config'] + '" id="browser-ponies-config"></script>' +
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-script'] + '" id="browser-ponies-script"></script>' +
         '<script type="text/javascript">/* <![CDATA[ */ ' +
@@ -171,17 +169,19 @@ var starter = function (srcs, cfg) {
 
             try {
                 if (!BrowserPonies.running()) {
-                    
+
                     for (const item in BrowserPoniesBaseConfig.ponies) {
-                        BrowserPoniesBaseConfig.ponies[item].baseurl = 'https://browser.pony.house/' + BrowserPoniesBaseConfig.ponies.ponies[item].baseurl;
+                        if (!BrowserPoniesBaseConfig.ponies[item].startsWith('https://browser.pony.house/')) {
+                            BrowserPoniesBaseConfig.ponies[item].baseurl = 'https://browser.pony.house/' + BrowserPoniesBaseConfig.ponies.ponies[item].baseurl;
+                        }
                     }
 
-                    BrowserPonies.start(); 
-                
+                    BrowserPonies.start();
+
                 }
             } catch (err) {
                 var checkExist = setInterval(function () {
-                    if (document.getElementById('browser-ponies-base')) {
+                    if (BrowserPoniesConfig.ponies && BrowserPoniesConfig.interactions) {
                         BrowserPoniesStarter(srcs, cfg);
                         clearInterval(checkExist);
                     }
