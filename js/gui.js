@@ -7,8 +7,7 @@ var firstLoading = true;
 var oldConfig = {};
 var PonyScripts = {
     'browser-ponies-base': absUrl('js/ponybase.js'),
-    'browser-ponies-script': absUrl('js/browserponies.js'),
-    'browser-ponies-config': absUrl('js/basecfg.js')
+    'browser-ponies-script': absUrl('js/browserponies.js')
 };
 
 function loadingJson(script) {
@@ -43,7 +42,7 @@ function toggleBrowserPoniesToBackground() {
 }
 
 function ponyCode(config) {
-    var code = 'var BrowserPoniesConfig = { autostart: true, spawn: {}, spawnRandom: 1}; (function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
+    var code = 'var startBaseCfgBrowserPonies = ' + startBaseCfgJS.toString() + '; var BrowserPoniesConfig = { autostart: true, spawn: {}, spawnRandom: 1}; (function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
     if (typeof (JSON) === "undefined") {
         code += '{},{});';
     } else {
@@ -61,7 +60,6 @@ function embedCode(config) {
     copy.autostart = true;
     return (
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-base'] + '"></script>' +
-        '<script type="text/javascript" src="' + PonyScripts['browser-ponies-config'] + '" id="browser-ponies-config"></script>' +
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-script'] + '" id="browser-ponies-script"></script>' +
         '<script type="text/javascript">/* <![CDATA[ */ ' +
         '(function (cfg) {' +
@@ -176,6 +174,7 @@ var starter = function (srcs, cfg) {
                         }
                     }
 
+                    startBaseCfgBrowserPonies();
                     BrowserPonies.start();
 
                 }
