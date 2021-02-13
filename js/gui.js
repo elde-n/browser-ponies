@@ -206,21 +206,34 @@ var starter = function (srcs, cfg) {
 
     var node = (document.body || document.documentElement ||
         document.getElementsByTagName('head')[0]);
+
+    let scriptsCount = Object.keys(srcs).length;
+    const checkerCallback = function () { scriptsCount--; if (scriptsCount < 1) { callback(); } };
+
     for (var id in srcs) {
-        if (document.getElementById(id)) continue;
-        if (node) {
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.id = id;
-            s.src = srcs[id];
-            node.appendChild(s);
+
+        if (document.getElementById(id)) {
+            checkerCallback();
         } else {
-            document.write('\u003cscript type="text/javscript" src="' +
-                srcs[id] + '" id="' + id + '"\u003e\u003c/script\u003e');
+
+            if (node) {
+                var s = document.createElement('script');
+                s.onload = function () { checkerCallback(); };
+                s.type = 'text/javascript';
+                s.id = id;
+                s.src = srcs[id];
+                node.appendChild(s);
+            }
+
+            /*  else {
+                document.write('\u003cscript type="text/javscript" src="' +
+                    srcs[id] + '" id="' + id + '"\u003e\u003c/script\u003e');
+            } */
+
         }
+
     }
 
-    callback();
 };
 
 function bookmarksMenu(config) {
