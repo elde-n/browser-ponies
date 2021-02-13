@@ -42,7 +42,7 @@ function toggleBrowserPoniesToBackground() {
 }
 
 function ponyCode(config) {
-    var code = 'var startBaseCfgBrowserPonies = ' + startBaseCfgJS.toString() + '; var BrowserPoniesConfig = { autostart: true, spawn: {}, spawnRandom: 0}; (function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
+    var code = 'var startBaseCfgBrowserPonies = ' + startBaseCfgJS.toString() + '; var BrowserPoniesConfig = { bookmarkloader: true, autostart: true, spawn: {}, spawnRandom: 0}; (function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
     if (typeof (JSON) === "undefined") {
         code += '{},{});';
     } else {
@@ -176,6 +176,7 @@ var starter = function (srcs, cfg) {
 
                     startBaseCfgBrowserPonies();
                     BrowserPonies.start();
+                    if (BrowserPoniesConfig.bookmarkloader) { BrowserPoniesStarter(srcs, cfg); }
 
                 }
             } catch (err) {
