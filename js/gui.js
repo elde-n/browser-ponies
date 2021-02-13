@@ -176,7 +176,7 @@ var starter = function (srcs, cfg) {
 
                     startBaseCfgBrowserPonies();
                     BrowserPonies.start();
-                    if (BrowserPoniesConfig.bookmarkloader) { BrowserPoniesConfig.bookmarkloader = false; setTimeout(function () { BrowserPoniesStarter(srcs, cfg); }, 500 }
+                    if (BrowserPoniesConfig.bookmarkloader) { BrowserPoniesConfig.bookmarkloader = false; setTimeout(function () { BrowserPoniesStarter(srcs, cfg); }, 500); }
 
                 }
             } catch (err) {
