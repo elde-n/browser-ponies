@@ -42,7 +42,7 @@ function toggleBrowserPoniesToBackground() {
 }
 
 function ponyCode(config) {
-    var code = 'var startBaseCfgBrowserPonies = ' + startBaseCfgJS.toString() + '; var BrowserPoniesConfig = { autostart: true, spawn: {}, spawnRandom: 1}; (function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
+    var code = 'var startBaseCfgBrowserPonies = ' + startBaseCfgJS.toString() + '; var BrowserPoniesConfig = { autostart: true, spawn: {}, spawnRandom: 0}; (function(srcs, cfg) { var BrowserPoniesStarter = ' + starter.toString() + ' ; BrowserPoniesStarter(srcs, cfg); })(';
     if (typeof (JSON) === "undefined") {
         code += '{},{});';
     } else {
