@@ -7,7 +7,6 @@ var firstLoading = true;
 var oldConfig = {};
 var PonyScripts = {
     'browser-ponies-base': absUrl('js/ponybase.js'),
-    'browser-ponies-base-fix': absUrl('js/ponybase-fix.js'),
     'browser-ponies-script': absUrl('js/browserponies.js'),
     'browser-ponies-config': absUrl('js/basecfg.js'),
     'browser-ponies-cfg': absUrl('js/ponycfg.js')
@@ -63,7 +62,6 @@ function embedCode(config) {
     copy.autostart = true;
     return (
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-base'] + '"></script>' +
-        '<script type="text/javascript" src="' + PonyScripts['browser-ponies-base-fix'] + '"></script>' +
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-cfg'] + '"></script>' +
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-config'] + '" id="browser-ponies-config"></script>' +
         '<script type="text/javascript" src="' + PonyScripts['browser-ponies-script'] + '" id="browser-ponies-script"></script>' +
@@ -172,10 +170,18 @@ var starter = function (srcs, cfg) {
             BrowserPonies.loadConfig(cfg);
 
             try {
-                if (!BrowserPonies.running()) { BrowserPonies.start(); }
+                if (!BrowserPonies.running()) {
+                    
+                    for (const item in BrowserPoniesBaseConfig.ponies) {
+                        BrowserPoniesBaseConfig.ponies[item].baseurl = 'https://browser.pony.house/' + BrowserPoniesBaseConfig.ponies.ponies[item].baseurl;
+                    }
+
+                    BrowserPonies.start(); 
+                
+                }
             } catch (err) {
                 var checkExist = setInterval(function () {
-                    if (document.getElementById('browser-ponies-base-fix') && document.getElementById('browser-ponies-base')) {
+                    if (document.getElementById('browser-ponies-base')) {
                         BrowserPoniesStarter(srcs, cfg);
                         clearInterval(checkExist);
                     }
