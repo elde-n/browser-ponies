@@ -88,7 +88,7 @@ function init() {
             'data-category': name
         },
             pretty));
-        catlist.appendChild(tag('li', { 'data-category': name },
+        catlist.appendChild(tag('li', { class: 'm-1 p-2 badge badge-secondary', 'data-category': name },
             pretty, ' ',
             tag('span', {
                 'class': 'delcat',
