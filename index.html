@@ -32,8 +32,8 @@
         <title>Browser Ponies</title>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
         <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous"/>
         <link rel="stylesheet" type="text/css" href="css/gui.css"/>
         <link rel="stylesheet" type="text/css" href="css/bootstrap_pc.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
@@ -55,37 +55,45 @@
 
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+        <nav class="navbar navbar-expand-lg navbar-nav d-block p-0 w-100 navbar-dark bg-dark">
+            <div class="navbase">
+                <button class="navbar-toggler ml-3 mr-3 mt-2 mb-2 border" type="button" data-toggle="collapse" data-target="#navTopPage" aria-controls="navTopPage" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-ellipsis-v" style="font-size: 23pt; color: #f0f0f0;"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse pl-3 pr-3 pt-2 pb-2 text-white" id="navTopPage">
+                <a class="navbar-brand mb-0 h1" href="/">
                     <a class="navbar-brand" href="#" id="title">Browser Ponies</a>
-                </div>
-                <div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="#n_main">Main</a>
-                            </li>
-                            <li>
-                                <a href="#n_bookmarklet">Bookmarklet</a>
-                            </li>
-                            <li>
-                                <a href="#n_config">Config and Ponies</a>
-                            </li>
-                            <li>
-                                <a href="#n_advanced">Advanced</a>
-                            </li>
-                            <li>
-                                <a href="#n_download">Download and License</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#n_main">
+                            Main
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#n_bookmarklet">
+                            Bookmarklet
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#n_config">
+                            Config and Ponies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#n_advanced">
+                            Advanced
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#n_download">
+                            Download and License
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -367,7 +375,7 @@ you can use this embed code to confine the ponies into an iframe:</label>
 
             <div id="n_advanced">
 
-            <!--<h3>Bookmarks Menu</h3>
+                <!--<h3>Bookmarks Menu</h3>
 
                 <p>
                 If you'd like you can download a bookmarks file with links to add a certain pony and the controls from the top of this page. Just right click-save this link and import the resulting file in your browser (only tested in Chrome and Firefox):
