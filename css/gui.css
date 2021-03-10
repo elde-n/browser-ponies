@@ -8,14 +8,14 @@
 
 /* Scroll Up */
 
-.navbar-inverse {
-    background-color: #22252b;
-    border-color: #22252b;
+.navbar-nav.fixed-top {
+    background-color: #22252b !important;
+    border-color: #22252b !important;
 }
 
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>.active>a:focus {
+.navbar-nav.fixed-top>.active>a,
+.navbar-nav.fixed-top>.active>a:hover,
+..navbar-nav.fixed-top>.active>a:focus {
     color: #fff;
     background-color: #4f525a;
 }
