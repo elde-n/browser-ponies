@@ -13,8 +13,8 @@ function absUrl(url) {
     return _absUrl(url).replace(/^http:/, 'https:');
 }
 
-if (typeof($x) === "undefined" && document.evaluate) {
-    window.$x = function(xpath, context) {
+if (typeof ($x) === "undefined" && document.evaluate) {
+    window.$x = function (xpath, context) {
         var nodes = [];
         try {
             var doc = (context && context.ownerDocument) || document;
@@ -83,22 +83,22 @@ function init() {
         var name = categories[i];
         var pretty = titelize(name);
         catselect.appendChild(tag('li', {
-                style: 'display:none;',
-                onclick: partial(changeCategory, name, true),
-                'data-category': name
-            },
+            style: 'display:none;',
+            onclick: partial(changeCategory, name, true),
+            'data-category': name
+        },
             pretty));
         catlist.appendChild(tag('li', { 'data-category': name },
             pretty, ' ',
             tag('span', {
-                    'class': 'delcat',
-                    onclick: partial(changeCategory, name, false)
-                },
+                'class': 'delcat',
+                onclick: partial(changeCategory, name, false)
+            },
                 '\u00d7')));
     }
 }
 
-observe(window, 'click', function(event) {
+observe(window, 'click', function (event) {
     var target = (event.target || event.srcElement);
     if (target.id !== 'addcat') {
         $('catselect').style.display = 'none';
@@ -319,7 +319,7 @@ function render(name, image, count, categories) {
 }
 
 function ponyCountFields() {
-    return typeof($x) !== "undefined" ?
+    return typeof ($x) !== "undefined" ?
         $x('//input[@name="count"]', $('ponylist')) :
         $('ponylist').querySelectorAll('input[name="count"]');
 }
@@ -362,7 +362,7 @@ function dumpConfig(dontSkip) {
 }
 
 function configValueToParam(params, name, value) {
-    if (typeof(value) === "object") {
+    if (typeof (value) === "object") {
         for (var key in value) {
             configValueToParam(params, name + "." + key, value[key]);
         }
