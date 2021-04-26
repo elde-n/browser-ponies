@@ -33,3 +33,7 @@
 .pc_m_bar {
     background-color: #C4D0F1 !important;
 }
+
+#n_main > p {
+    overflow-wrap: break-word;
+}
