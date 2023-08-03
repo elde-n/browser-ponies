@@ -1,0 +1,21 @@
+{
+	"name": "browser-ponies",
+	"manifest_version": 2,
+	"version": "1.0",
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "browser@ponies"
+		}
+	},
+
+	"web_accessible_resources": [
+		"images/*",
+		"ponies/*"
+	],
+
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["config.js", "pony.js", "index.js"]
+	}]
+}
